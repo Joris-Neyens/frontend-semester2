@@ -4,20 +4,26 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
+        integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&family=Vollkorn:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
     <title>Home</title>
 </head>
 
 <body>
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <a class="navbar-brand" href="#">Bicycle co.</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white row">
+            <a class="navbar-brand col-3" href="#">Bicycle co.</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+            <div class="collapse navbar-collapse row col-6" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto col justify-content-center">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
@@ -29,6 +35,10 @@
                     </li>
                 </ul>
             </div>
+            <div class="col-3">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-shopping-basket"></i>
+            </div>
         </nav>
     </div>
     <header>
@@ -37,22 +47,66 @@
     </header>
     <section>
         <div class="container">
-            <div class="row">
-                <h1 class="mx-auto">Bestsellers</h1>
-            </div>
-       
-                <div id="card-container" class="row">
+            <div class="card-wrapper">
+                <h2 class="text-center">Bestsellers</h2>
+                <div id="card-container" class="card-deck justify-content-center">
                 </div>
-
+            </div>
+            <div class="row justify-content-center">
+                <a class="btn btn-primary">Shop online</a>
+            </div>
         </div>
     </section>
-    
-    
+    <section>
+        <div class="container">
+            <h2 class="text-center">Why bicycle co.</h2>
+            <p id="about-text" class="text-center">Our bikes are durable, practical and good looking. Being the new kid
+                on the block trying to emulate the quality of the past we choose to combine the
+                newest materials with the unmatched quality of making stuff by hand.</p>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h5>Contact</h5>
+                    <p>80 Backstreet</p>
+                    <p>W3 1AU London</p>
+                    <p>United Kingdom</p>
+                </div>
+                <div class="col">
+                    <h5>Terms & conditions</h5>
+                    <p>Payments</p>
+                    <p>Return policy</p>
+                    <p>Customer service</p>
+                </div>
+                <div class="col">
+                    <div>
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                    <div>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
 
     <script src="js/index.js" type="module"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

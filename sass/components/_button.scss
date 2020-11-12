@@ -1,0 +1,12 @@
+.btn-primary {
+    background-color: $accent !important;
+    border-style: none;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $unica;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}

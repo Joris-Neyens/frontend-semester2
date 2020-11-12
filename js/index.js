@@ -13,11 +13,10 @@ export function headerImageHtml(homeApi) {
     
     const image = homeApi.hero_banner.url
     const imageUrl = baseUrl + image;
-
-
     let newHtml = "";
 
-    newHtml += `<div class="header-container_image" style="background-image: url(${imageUrl})"><h4>bicycle.co</h4></div>`
+    newHtml += `<div class="opacity"></div><div class="header-container_image" style="background-image: url(${imageUrl})">
+                <h1>bicycle.co</h1></div>`
 
     headerContainer.innerHTML = newHtml;
 
@@ -35,17 +34,15 @@ export function makeHtml(products) {
 
     products.forEach(function(product) {
 
-        html += `<div class="col-4 offset-1 card" style="width: 18rem;">
+        html += `<div class="col-4 card shadow-sm" style="width: 18rem;">
                     <div class="card_image">
                         <img src="${baseUrl + product.image.url}" class="card-img-top" alt="${product.image.caption}">
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">${product.title}</h5>
-                        <p class="card-text">${product.description}</p>
-                        <a href="#" class="btn btn-primary">check it out</a>
+                        <h5 class="card-title text-center">${product.title}</h5>
+                        <p class="card-text text-center">Starting at $${product.price}</p>
                     </div>
                 </div>`
-
     });
 
     cardContainer.innerHTML = html;

@@ -1,4 +1,4 @@
-@import "partials/custom";
+@import "base/custom";
 
 @import "../bootstrap-scss/functions";
 @import "../bootstrap-scss/variables";
@@ -38,4 +38,10 @@
 @import "../bootstrap-scss/utilities";
 @import "../bootstrap-scss/print";
 
-@import "./partials/home";
+@import "./pages/home";
+@import "./layout/layout";
+@import "./components/card";
+@import "./base/typography";
+@import "./components/button";
+@import "./layout/header";
+@import "./components/footer";

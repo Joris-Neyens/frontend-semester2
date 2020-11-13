@@ -1,4 +1,30 @@
 footer {
     background-color: $primary;
     color: white;
+    margin-top: 60px;
+
+ 
+    h3 {
+        color: white !important;
+    }
+
+    p {
+        color: white;
+        margin-bottom: 8px;
+    }
+
+    i {
+        color: white;
+        font-size: 2rem;
+        padding-bottom: 15px;
+        text-align: right;
+    }
+
+    
+}
+
+   
+.icon {
+    display: flex;
+    justify-content: right;
 }

@@ -26,6 +26,8 @@ header {
     margin: 0 auto;
     padding: 20px 0 60px 0;
     background-color: $secondary;
+    background-image: url(/images/concrete-wall-1.png)
+    
 }
 .card_image {
     overflow: hidden;
@@ -35,6 +37,10 @@ header {
     height: 300px;
     object-fit: cover;
 }
+.card-body {
+    height: 120px;
+}
 #about-text {
     margin: 0 auto;
+    font-size: 1.2rem;
 }

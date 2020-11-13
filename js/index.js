@@ -30,23 +30,36 @@ export function makeHtml(products) {
 
     const cardContainer = document.querySelector("#card-container");
 
-    let html= "";
+    let cardHtml= "";
 
     products.forEach(function(product) {
 
-        html += `<div class="col-4 card shadow-sm" style="width: 18rem;">
+        cardHtml += `<div class="card shadow-sm col-10 offset-1 col-sm-5 offset-sm-0 col-md-5 col-lg-3" style="width: 18rem;">
                     <div class="card_image">
                         <img src="${baseUrl + product.image.url}" class="card-img-top" alt="${product.image.caption}">
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title text-center">${product.title}</h5>
-                        <p class="card-text text-center">Starting at $${product.price}</p>
+                        <h3 class="card-title text-center">${product.title}</h3>
+                        <p class="card-text text-center">Starting at: <span class="price">$${product.price}</span></p>
                     </div>
                 </div>`
+
+
     });
 
-    cardContainer.innerHTML = html;
-    
+    cardContainer.innerHTML = cardHtml;
 
 
+
+
+
+
+                
 }
+
+
+const cardWrapper = document.querySelector(".shadow-sm");
+
+const height = cardWrapper.offsetHeight 
+
+console.log(height)

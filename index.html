@@ -22,7 +22,7 @@
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse row col-6" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse row col-12 offset-1 col-lg-6 offset-lg-0" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto col justify-content-center">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -33,9 +33,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Favourites</a>
                     </li>
+                    <div id="top-icons-dropdown" class="d-lg-none col-3">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-shopping-basket"></i>
+                    </div>
                 </ul>
             </div>
-            <div class="col-3">
+            <div id="top-icons-main" class="d-none d-lg-block col-3 order-md-10">
                 <i class="far fa-heart"></i>
                 <i class="fas fa-shopping-basket"></i>
             </div>
@@ -47,14 +51,17 @@
     </header>
     <section>
         <div class="container">
-            <div class="card-wrapper">
-                <h2 class="text-center">Bestsellers</h2>
-                <div id="card-container" class="card-deck justify-content-center">
+            <div class="absolute-wrapper">
+                <div class="card-wrapper shadow-sm">
+                    <h2 class="text-center">Bestsellers</h2>
+                    <div id="card-container" class="card-deck justify-content-center">
+                    </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <a class="btn btn-primary">Shop online</a>
-            </div>
+                <div class="row justify-content-center">
+                    <a class="btn btn-primary">Shop online</a>
+                </div>
+            
         </div>
     </section>
     <section>
@@ -69,25 +76,25 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h5>Contact</h5>
+                    <h3>Contact</h3>
                     <p>80 Backstreet</p>
                     <p>W3 1AU London</p>
                     <p>United Kingdom</p>
                 </div>
-                <div class="col">
-                    <h5>Terms & conditions</h5>
+                <div class="col offset-1">
+                    <h3>Terms & conditions</h3>
                     <p>Payments</p>
                     <p>Return policy</p>
                     <p>Customer service</p>
                 </div>
                 <div class="col">
-                    <div>
+                    <div class="icon">
                         <i class="fab fa-facebook"></i>
                     </div>
-                    <div>
+                    <div class="icon">
                         <i class="fab fa-instagram"></i>
                     </div>
-                    <div>
+                    <div class="icon">
                         <i class="fab fa-twitter"></i>
                     </div>
                 </div>

@@ -1,4 +1,10 @@
 
+h1 {
+    font-family: $unica !important;
+    text-transform: uppercase;
+    font-size: 3rem !important;
+    color: #ffffff !important;
+}
 h2 {
     font-family: $unica;
     text-transform: uppercase;
@@ -6,7 +12,27 @@ h2 {
     font-size: 2.6rem;
     padding: 20px 0;
 }
+h3 {
+    font-family: $unica;
+    text-transform: uppercase;
+    color: $primary;
+    font-size: 1.4rem;
+}
+p {
+    font-family: $vollkorn;
+    color: $primary;
+
+    .price {
+        font-family: $unica;
+        font-size: 1.4rem;
+    }
+}
+
 .navbar-brand {
     font-family: $unica;
     color: $primary;
+}
+.nav-item {
+    font-family: $unica;
+    font-size: 1.4rem;
 }

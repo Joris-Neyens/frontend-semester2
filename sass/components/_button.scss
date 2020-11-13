@@ -1,3 +1,4 @@
+
 .btn-primary {
     background-color: $accent !important;
     border-style: none;
@@ -11,4 +12,9 @@
     font-size: 1.8rem;
     display: absolute;
     z-index: 1;
+    margin-top: -25px;
+}
+
+#button-top {
+    margin-bottom: 25px;
 }

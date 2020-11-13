@@ -34,7 +34,7 @@ export function makeHtml(products) {
 
     products.forEach(function(product) {
 
-        cardHtml += `<div class="card shadow-sm col-10 offset-1 col-sm-5 offset-sm-0 col-md-5 col-lg-3" style="width: 18rem;">
+        cardHtml += `<div class="card shadow-sm col-12 col-sm-5 offset-sm-0 col-md-5 col-lg-3" style="width: 18rem;">
                     <div class="card_image">
                         <img src="${baseUrl + product.image.url}" class="card-img-top" alt="${product.image.caption}">
                     </div>

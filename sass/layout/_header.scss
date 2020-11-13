@@ -1,9 +1,29 @@
 .header-container {
     position: relative;
 }
+header {
+    width: 100%;
+    margin-bottom: -120px;
+}
+.header-container {
+    width: 100%;
+    max-width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    
+}
+.header-container_image {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .opacity {
     position: absolute;
-    height: 400px;
+    height: 500px;
     width: 100%;
     top: 0;
     bottom: 0;

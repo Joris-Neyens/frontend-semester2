@@ -1,39 +1,20 @@
-import {baseUrl} from "./common/baseUrl.js";
-import {getHomeApi} from "./utils/getHomeApi.js";
-import {getProductsApi} from "./common/getProductsApi.js";
 
+import {baseUrl} from "../common/baseUrl.js";
+import {getProductsApi} from "../common/getProductsApi.js";
 
-//header image
-getHomeApi();
-export function headerImageHtml(homeApi) {
-
-    const headerContainer = document.querySelector("#home-header-container");
-
-    const alt = homeApi.hero_banner.caption
-    
-    const image = homeApi.hero_banner.url
-    const imageUrl = baseUrl + image;
-    let newHtml = "";
-
-    newHtml += `<div class="opacity"></div>
-                <div id="home-container_image" class="header-container_image" style="background-image: url(${imageUrl})">
-                <h1>bicycle.co</h1></div>`
-
-    headerContainer.innerHTML = newHtml;
-
-}
 
 //cards
 getProductsApi()
-export function makeHtml(products) {
+
+export function makeProductsHtml(products) {
+
+
 
     const cardContainer = document.querySelector("#card-container");
 
     let cardHtml= "";
 
     products.forEach(function(product) {
-
-        console.log(product.featured)
 
         cardHtml += `<div class="card shadow-sm col-12 col-sm-5 offset-sm-0 col-md-5 col-lg-3" style="width: 18rem;">
                     <div class="card_image">
@@ -51,4 +32,3 @@ export function makeHtml(products) {
     cardContainer.innerHTML = cardHtml;
                 
 }
-

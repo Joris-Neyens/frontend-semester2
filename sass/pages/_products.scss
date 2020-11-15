@@ -1,0 +1,56 @@
+#products-header_image {
+    background-image: url(../../images/will-h-mcmahan-99Z7QGwyB0A-unsplash.jpg);
+
+}
+.products_wrapper {
+    padding: 20px 0 60px 0;
+    background-color: white;
+    margin-left: 30px;
+    @media only screen and (max-width: 1020px) {
+        margin-left: 0px;
+    }
+}
+.products_menu {
+    background-color: $secondary;
+    
+    margin-top: 40px;
+    margin-left: -30px;
+
+    @media only screen and (min-width: 992px) {
+        margin-top: 130px;
+    }
+    @media only screen and (max-width: 1020px) {
+        margin-left: 0px;
+    }
+    @media only screen and (min-width: 1259px) {
+        margin-left: -60px;
+    }
+    
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    input {
+        margin-bottom: 20px;
+    }
+}
+.breadcrumb-nav {
+    z-index: 10;
+    font-family: $unica;
+    text-transform: uppercase;
+    padding-left: 80px;
+    font-size: 2.4rem;
+
+    @media only screen and (max-width: 446px) {
+        font-size: 1.8rem;  
+    }
+    @media only screen and (max-width: 991px) {
+        padding-left: 13px;
+    }
+    
+}
+
+.breadcrumb-item a {
+    color: $breadcrumb-color;
+}

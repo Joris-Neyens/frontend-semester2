@@ -12,9 +12,27 @@
     font-size: 1.8rem;
     display: absolute;
     z-index: 1;
-    margin-top: -25px;
+    margin: -25px 0 0 0;
+}
+.btn-secondary {
+    background-color: $accent !important;
+    color: white;
+    border-style: none;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $unica;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    margin: 0;
+}
+.btn-secondary:hover {
+    color: white;
+    background-color: black;
 }
 
 #button-top {
-    margin-bottom: 25px;
+    margin: 0 0 25px 0;
 }

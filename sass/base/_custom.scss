@@ -1,13 +1,26 @@
 $primary: #3B5070;
 $secondary: #CBD9D9;
 $accent: #EB505D;
+$button-hover: #76f69d;
+
+
+$unica: 'Unica One', cursive;
+$vollkorn: 'Vollkorn', serif;
+
 
 
 $navbar-light-active-color: #3B5070;
 $navbar-light-hover-color: #3B5070; 
 $navbar-light-brand-color:  #3B5070;
 
-$unica: 'Unica One', cursive;
-$vollkorn: 'Vollkorn', serif;
+//form
+$input-color: $primary;
+$input-font-family: $vollkorn;
+$input-font-size: 1.2rem !important;
+
+$breadcrumb-color: rgb(206, 206, 206);
+$breadcrumb-bg : none;
+$breadcrumb-active-color: white;
+$breadcrumb-divider-color: $breadcrumb-color;
 
 

@@ -1,0 +1,32 @@
+#admin-header-container {
+    background-image: url(../../images/giorgio-trovato-v_bri4iVuiM-unsplash.jpg);
+    max-width: 1200px;
+    height: 80vh;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: left;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+
+    @media only screen and (min-width: 400px) {
+        padding: 40px !important;
+    }
+
+    label {
+        color: $primary;
+        font-family: $vollkorn;
+        font-size: 1.2rem;
+    }
+
+}
+#admin-h1 {
+    color: $primary !important;
+    font-size: 2.6rem !important;
+}

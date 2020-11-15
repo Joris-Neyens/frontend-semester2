@@ -11,8 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Unica+One&family=Vollkorn:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
-    <title>Bicycle co. | Home</title>
+    <title>Bicycle co. | Products</title>
 </head>
+
 <body>
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-white row">
@@ -23,11 +24,11 @@
             </button>
             <div class="collapse navbar-collapse row col-12 offset-1 col-lg-6 offset-lg-0" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto col justify-content-center">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./products.html">Products</a>
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Products</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./favourites.html">Favourites</a>
@@ -45,31 +46,37 @@
         </nav>
     </div>
     <header>
-        <div id="home-header-container" class="header-container">
+        <div class="header-container">
+            <div class="opacity"></div>
+            <div id="products-header_image" class="header-container_image">
+                <nav aria-label="breadcrumb" class="breadcrumb-nav">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Products</li>
+                    </ol>
+                </nav>
+            </div>
+            
         </div>
     </header>
     <section>
-        <div id="button-top" class="row justify-content-center">
-            <a class="btn btn-primary d-lg-none">Shop online</a>
-        </div>
         <div class="container">
-                <div class="card-wrapper shadow-sm">
-                    <h2 class="text-center">Bestsellers</h2>
+            <div class="row">
+                <div class="categories col-12 col-lg-3 products_menu row">
+                    <h2 class="col-12">Bikes</h2>
+                    <input class="col-12" type="text" placeholder="Search"></input>
+                    <p class="col-12 col-md-3 col-lg-12 text-md-center text-lg-left ">Single Speed</p>
+                    <p class="col-12 col-md-3 col-lg-12 text-md-center text-lg-left">Fixed Geer</p>
+                    <p class="col-12 col-md-3 col-lg-12 text-md-center text-lg-left">City Bike</p>
+                    <p class="col-12 col-md-3 col-lg-12 text-md-center text-lg-left">Mountain Bike</p>
+                </div>
+                <div class="col-12 col-lg-9 products_wrapper shadow">
+                    <h2 class="text-center">Products</h2>
                     <div id="card-container" class="card-deck justify-content-center">
                     </div>
                 </div>
-                <div class="row justify-content-center">
-                    <a class="btn btn-primary d-none d-lg-block">Shop online</a>
-                </div>
+            </div>
             
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <h2 class="text-center">Why bicycle co.</h2>
-            <p id="about-text" class="text-center">Our bikes are durable, practical and good looking. Being the new kid
-                on the block trying to emulate the quality of the past we choose to combine the
-                newest materials with the unmatched quality of making stuff by hand.</p>
         </div>
     </section>
     <footer>
@@ -104,8 +111,7 @@
 
 
 
-
-    <script src="js/index.js" type="module"></script>
+    <script src="js/pages/products.js" type="module"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

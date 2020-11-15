@@ -8,9 +8,15 @@ header {
 .header-container {
     width: 100%;
     max-width: 1200px;
-    height: 500px;
+    height: 350px;
     margin: 0 auto;
-    
+}
+#home-header-container {
+    height: 500px;
+
+    .opacity {
+        height: 500px;
+    }
 }
 .header-container_image {
     height: 100%;
@@ -18,12 +24,16 @@ header {
     background-position: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:center;
+    align-items: left;
+}
+#home-container_image {
     align-items: center;
+    
 }
 .opacity {
     position: absolute;
-    height: 500px;
+    height: 350px;
     width: 100%;
     top: 0;
     bottom: 0;

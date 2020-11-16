@@ -38,14 +38,16 @@
 @import "../bootstrap-scss/utilities";
 @import "../bootstrap-scss/print";
 
+@import "./base/typography";
 @import "./pages/home";
 @import "./pages/products";
+@import "./pages/productPage";
 @import "./pages/favourites";
 @import "./pages/admin";
 @import "./layout/layout";
-@import "./components/card";
-@import "./base/typography";
-@import "./components/button";
 @import "./layout/header";
+@import "./components/card";
+@import "./components/button";
 @import "./components/footer";
 @import "./components/navbar";
+@import "./components/breadcrumb";

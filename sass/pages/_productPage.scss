@@ -1,0 +1,43 @@
+#product-breadcrumb {
+    padding-left: 0px !important;
+    margin-top: 40px;
+
+    .breadcrumb {
+        padding: 0;
+        font-size: 1.6rem;
+    }
+
+    .breadcrumb-item a {
+        color: $link-dark-unactive;
+    }
+
+    .active {
+        color: #3B5070;
+    }
+}
+
+.details_image {
+    height: 500px;
+    background-color: white;
+
+}
+.details_info {
+    height: 500px;
+    background-color: $secondary;
+}
+.product-info_headings {
+    border-bottom: 2px solid $primary;
+
+    h2 {
+        font-size: 1.6rem;
+        padding-bottom: 0;
+        padding-left: 0;
+        color: $link-dark-unactive;
+
+
+    
+    }
+    .active {
+        color: $primary;
+    }
+}

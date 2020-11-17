@@ -1,6 +1,10 @@
-import {baseUrl} from "./common/baseUrl.js";
-import {getHomeApi} from "./utils/getHomeApi.js";
-import {getProductsApi} from "./common/getProductsApi.js";
+import {baseUrl} from "../common/baseUrl.js";
+import {getHomeApi} from "../utils/getHomeApi.js";
+import {getProductsApi} from "../common/getProductsApi.js";
+import {checkHeart} from "../utils/checkHeart.js";
+
+checkHeart();
+
 
 
 //header image
@@ -24,18 +28,19 @@ export function headerImageHtml(homeApi) {
 }
 
 //cards
-getProductsApi()
-export function makeHtml(products) {
 
-    const cardContainer = document.querySelector("#card-container");
+export function makeHtml(featured) {
 
-    let cardHtml= "";
 
-    products.forEach(function(product) {
+    const homeCardContainer = document.querySelector("#home-card-container");
 
-        console.log(product.featured)
+    let homeCardHtml= "";
 
-        cardHtml += `<div class="card shadow-sm col-12 col-sm-5 offset-sm-0 col-md-5 col-lg-3" style="width: 18rem;">
+    featured.forEach(function(product) {
+
+        if(product.featured === true) {
+            
+            homeCardHtml += `<div class="card shadow-sm col-12 col-sm-5 offset-sm-0 col-md-5 col-lg-3" style="width: 18rem;">
                     <div class="card_image">
                         <img src="${baseUrl + product.image.url}" class="card-img-top" alt="${product.image.caption}">
                     </div>
@@ -46,9 +51,12 @@ export function makeHtml(products) {
                 </div>`
 
 
+        }
+
+
     });
 
-    cardContainer.innerHTML = cardHtml;
+    homeCardContainer.innerHTML = homeCardHtml;
                 
 }
 

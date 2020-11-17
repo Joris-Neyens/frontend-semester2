@@ -10856,6 +10856,10 @@ body {
   background-image: url(../../images/concrete-wall-1.png);
 }
 
+.product {
+  width: 100%;
+}
+
 #products-header_image {
   background-image: url(../../images/will-h-mcmahan-99Z7QGwyB0A-unsplash.jpg);
 }
@@ -10863,36 +10867,18 @@ body {
 .products_wrapper {
   padding: 20px 0 60px 0;
   background-color: white;
-  margin-left: 30px;
-}
-
-@media only screen and (max-width: 1020px) {
-  .products_wrapper {
-    margin-left: 0px;
-  }
 }
 
 .products_menu {
   background-color: #CBD9D9;
   margin-top: 40px;
-  margin-left: -30px;
+  padding: 0 40px;
 }
 
 @media only screen and (min-width: 992px) {
   .products_menu {
     margin-top: 130px;
-  }
-}
-
-@media only screen and (max-width: 1020px) {
-  .products_menu {
-    margin-left: 0px;
-  }
-}
-
-@media only screen and (min-width: 1259px) {
-  .products_menu {
-    margin-left: -60px;
+    margin-right: 30px;
   }
 }
 
@@ -10901,7 +10887,12 @@ body {
 }
 
 .products_menu input {
-  margin-bottom: 20px;
+  padding: 5px 15px;
+  margin: 0 15px 20px 15px;
+  border: none;
+  font-family: "Vollkorn", serif;
+  font-size: 1.2rem;
+  color: #3B5070;
 }
 
 #product-breadcrumb {
@@ -10947,7 +10938,7 @@ body {
   color: #3B5070;
 }
 
-#favourites-header_image {
+#favorites-header_image {
   background-image: url(../../images/sole-bicycles-mZz_kW1SQQc-unsplash.jpg);
 }
 
@@ -11094,20 +11085,60 @@ h1 {
   margin: 0 auto;
 }
 
+.card :hover {
+  text-decoration: none;
+}
+
 .card_image {
   overflow: hidden;
 }
 
-.card_image img {
+.card_image {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   width: 100%;
   height: 200px;
   max-height: 200px;
+}
+
+.card_image img {
   -o-object-fit: cover;
      object-fit: cover;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.card_image button {
+  position: absolute;
+  margin: 10px;
+  z-index: 10;
 }
 
 .card-body {
   height: 120px;
+}
+
+.card-body i {
+  padding-left: 0;
+  text-align: center;
+}
+
+i:hover {
+  color: #EB505D;
+}
+
+i:hover h3 {
+  margin: 0;
 }
 
 .btn-primary {
@@ -11210,6 +11241,11 @@ i {
 
 .navbar {
   background-color: rgba(255, 240, 173, 0) !important;
+  text-transform: uppercase;
+}
+
+#heart.fas {
+  color: #EB505D;
 }
 
 .breadcrumb-nav {

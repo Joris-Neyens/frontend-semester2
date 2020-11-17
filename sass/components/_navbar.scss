@@ -13,4 +13,9 @@ i {
 }
 .navbar {
     background-color: rgba(255, 240, 173, 0) !important;
+    text-transform: uppercase;
+}
+
+#heart.fas {
+    color: $accent;
 }

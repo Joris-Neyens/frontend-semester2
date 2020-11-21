@@ -1,7 +1,5 @@
-import {baseUrl} from "./baseUrl.js";
-import {makeHtml} from "../pages/index.js";
-
-
+import {baseUrl} from "../../common/baseUrl.js";
+import {makeHtml} from "../../index.js";
 
 export function getProductsApi() {
 

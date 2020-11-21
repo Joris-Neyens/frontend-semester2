@@ -1,5 +1,5 @@
-import {checkHeart} from "../../utils/checkHeart.js"
-
+import {checkHeart} from "../../common/checkHeart.js";
+import {getExistingStorage, storeItem} from "../../common/localStorage.js";
 
 export function selectFavorites() {
 
@@ -14,7 +14,7 @@ export function selectFavorites() {
 
 
     //checkstorage
-    const existingFavorites = getExistingFavorites();
+    const existingFavorites = getExistingStorage("favorites");
 
     const favoriteExists = existingFavorites.find(function(favorites) {
         return favorites.id === id;
@@ -31,34 +31,19 @@ export function selectFavorites() {
 
     existingFavorites.push(newFavorite)
 
-    setFavorites(existingFavorites)
+    storeItem("favorites", existingFavorites)
 
     } else {
-        const newFavorites = existingFavorites.filter((favorites) => favorites.id !== id) 
-            {
-            setFavorites(newFavorites)
-        }
+        const newFavorites = existingFavorites.filter(function(favorites) {
+            return favorites.id !== id; 
+            })
+
+            storeItem("favorites", newFavorites)
+        
     } 
 
     checkHeart()
 }
 
-//check local storage & return it
-export function getExistingFavorites() {
-    const favorites = localStorage.getItem("favorites")
 
-    if(!favorites) {
-
-        return[];
-       
-    } else {
-        return JSON.parse(favorites);
-    }
-}
-
-
-//add to localstorage
-function setFavorites(favorite) {
-    localStorage.setItem("favorites", JSON.stringify(favorite))
-}
 

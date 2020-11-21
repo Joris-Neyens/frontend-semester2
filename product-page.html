@@ -27,21 +27,27 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="products.html">Products</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="favorites.html">Favorites</a>
                     </li>
-                    <div id="top-icons-dropdown" class="d-lg-none col-12">
-                        <a href="favorites.html"><i class="far fa-heart"></i></a>
-                        <i class="fas fa-shopping-basket"></i>
+                    <div id="top-icons-dropdown" class="d-lg-none col-12 row">
+                        <a class="col-2" href="favorites.html"><i class="heart far fa-heart"></i></a>
+                        <a class="col-3" href="shopping-basket.html">
+                            <i class="fas fa-shopping-basket"></i>
+                            <span style="display: none" class="basket-number"></span>
+                        </a>
                     </div>
                 </ul>
             </div>
-            <div id="top-icons-main" class="d-none d-lg-block order-md-10">
-                <a href="favorites.html"><i class="far fa-heart"></i></a>
-                <i class="fas fa-shopping-basket"></i>
+            <div id="top-icons-main" class="col-3 d-none d-lg-block order-md-10">
+                    <a href="favorites.html"><i class="heart far fa-heart"></i></a>
+                    <a href="shopping-basket.html">
+                        <i class="fas fa-shopping-basket"></i>
+                        <span style="display: none" class="basket-number"></span>
+                    </a>
             </div>
         </nav>
     </div>
@@ -50,30 +56,28 @@
                     <ol class="breadcrumb">
                       <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                       <li class="breadcrumb-item"><a href="products.html">Products</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Products-page</li>
+                      <li id="breadcrumb-active" class="breadcrumb-item active" aria-current="page">Products-page</li>
                     </ol>
                 </nav>
             </div>
     <section>
         <div class="container">
             <div class="details row">
-                <div class="details_image shadow col-5">
+                <div class="details_image shadow col-12 col-lg-6">
 
                 </div>
-                <div class="details_info col-5 offset-1 ">
+                <div class="details_info col-12 col-lg-4">
 
                 </div>
             </div>
         </div>
     </section>
-   <section>
-       <div class="container">
-            <div class="product-info_headings row">
-                    <h2 class="col-lg-3 active">Product Description</h2>
-                    <h2 class="col-lg-3">Specifications</h2>
+   <section id="product-info" class="container">
+       <div class="col-12 col-md-10 col-lg-7">
+            <div class="product-info_headings">
+                <h2 class="col-lg-12">Product Description</h2>
             </div>
             <div class="product-info_text">
-
             </div>
         </div>
    </section>
@@ -109,7 +113,7 @@
 
 
 
-    <script src="js/pages/products/products.js" type="module"></script>
+    <script src="./js/productPage.js" type="module"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

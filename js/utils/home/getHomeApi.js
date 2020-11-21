@@ -1,5 +1,5 @@
-import {baseUrl} from "../common/baseUrl.js";
-import {headerImageHtml} from "../pages/index.js";
+import {baseUrl} from "../../common/baseUrl.js";
+import {headerImageHtml} from "../../index.js";
 
 export function getHomeApi() {
 

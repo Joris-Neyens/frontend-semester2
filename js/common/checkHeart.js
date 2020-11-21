@@ -1,11 +1,15 @@
 
-import {getExistingFavorites} from "../pages/products/addFav.js";
+import {getExistingStorage} from "./localStorage.js";
 
 export function checkHeart() {
 
-    const existingFavorites = getExistingFavorites();
+    
 
-    let navbarI = document.querySelectorAll(".navbar #heart")
+    const existingFavorites = getExistingStorage("favorites");
+
+    
+    //menu heart
+    let navbarI = document.querySelectorAll(".navbar .heart")
 
     const favoriteExists = existingFavorites.find(function(favorites) {
         return favorites.id

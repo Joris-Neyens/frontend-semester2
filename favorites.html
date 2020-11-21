@@ -32,15 +32,21 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="./favorites.html">Favorites</a>
                     </li>
-                    <div id="top-icons-dropdown" class="d-lg-none col-12">
-                        <a href="favorites.html"><i id="heart" class="far fa-heart"></i></a>
-                        <i id="heart" class="fas fa-shopping-basket"></i>
+                    <div id="top-icons-dropdown" class="d-lg-none col-12 row">
+                        <a class="col-2" href="favorites.html"><i class="heart far fa-heart"></i></a>
+                        <a class="col-3" href="shopping-basket.html">
+                            <i class="fas fa-shopping-basket"></i>
+                            <span style="display: none" class="basket-number"></span>
+                        </a>
                     </div>
                 </ul>
             </div>
-            <div id="top-icons-main" class="d-none d-lg-block order-md-10">
-                <a href="favorites.html"><i class="far fa-heart"></i></a>
-                <i class="fas fa-shopping-basket"></i>
+            <div id="top-icons-main" class="col-3 d-none d-lg-block order-md-10">
+                    <a href="favorites.html"><i class="heart far fa-heart"></i></a>
+                    <a href="shopping-basket.html">
+                        <i class="fas fa-shopping-basket"></i>
+                        <span style="display: none" class="basket-number"></span>
+                    </a>   
             </div>
         </nav>
     </div>
@@ -51,7 +57,7 @@
                 <nav aria-label="breadcrumb" class="breadcrumb-nav">
                     <ol class="breadcrumb">
                       <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
-                      <li class="breadcrumb-item"><a href="/products.html">Products</a></li>
+                      <li class="breadcrumb-item"><a href="products.html">Products</a></li>
                       <li class="breadcrumb-item active" aria-current="page">Favorites</li>
                     </ol>
                 </nav>
@@ -60,21 +66,21 @@
         </div>
     </header>
     <section>
-            <div class="product row justify-content-center">
-                <div class="categories col-11 col-lg-3 products_menu row">
+        <div class="product row justify-content-center">
+            <div class="categories col-11 col-lg-3 products_menu row">
+                <div class="sticky-top">
                     <h2 class="col-12">Bikes</h2>
-                    <input class="col-12" type="text" placeholder="Search"></input>
-                    <p class="col-12 col-md-3 col-lg-12 text-md-center text-lg-left ">Single Speed</p>
-                    <p class="col-12 col-md-3 col-lg-12 text-md-center text-lg-left">Fixed Geer</p>
-                    <p class="col-12 col-md-3 col-lg-12 text-md-center text-lg-left">City Bike</p>
-                    <p class="col-12 col-md-3 col-lg-12 text-md-center text-lg-left">Mountain Bike</p>
+                    <input id="favorites-input" class="col-12" type="text" placeholder="Search"></input>
+                    <button type="button" id="form-button" class="remove-button btn btn-secondary">remove all favorites</button>
                 </div>
-                <div class="col-11 col-lg-8 products_wrapper shadow">
-                    <h2 class="text-center">Products</h2>
-                    <div id="card-container" class="card-deck justify-content-center">
-                    </div>
+  
+            </div>
+            <div class="col-11 col-lg-8 products_wrapper shadow">
+                <h2 class="text-center">Favorites</h2>
+                <div id="favorites-card-container" class="card-deck justify-content-center">
                 </div>
             </div>
+        </div>
     </section>
     <footer>
         <div class="container">
@@ -108,7 +114,7 @@
 
 
 
-    <script src="js/pages/favorites.js" type="module"></script>
+    <script src="js/favorites.js" type="module"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

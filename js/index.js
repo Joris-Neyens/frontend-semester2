@@ -1,10 +1,11 @@
-import {baseUrl} from "../common/baseUrl.js";
-import {getHomeApi} from "../utils/getHomeApi.js";
-import {getProductsApi} from "../common/getProductsApi.js";
-import {checkHeart} from "../utils/checkHeart.js";
+import {baseUrl} from "./common/baseUrl.js";
+import {getHomeApi} from "./utils/home/getHomeApi.js";
+import {getProductsApi} from "./utils/home/getProductsApi.js";
+import {checkHeart} from "./common/checkHeart.js";
+import {checkBasket} from "./common/checkBasket.js";
 
 checkHeart();
-
+checkBasket();
 
 
 //header image

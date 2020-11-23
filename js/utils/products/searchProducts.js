@@ -2,9 +2,8 @@ import {makeProductsHtml} from "../../products.js";
 
 export function searchProducts(products) {
 
-
     //search product title
-    const categoriesInput = document.querySelector(".categories input");
+    const categoriesInput = document.querySelector(".product_navigation-content input");
 
     categoriesInput.onkeyup = function(input) {
 
@@ -39,11 +38,6 @@ export function searchProducts(products) {
         makeProductsHtml(products)
 
     })
-
-    
-    
-
-    
     
 
 }

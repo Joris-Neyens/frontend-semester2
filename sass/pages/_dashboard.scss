@@ -1,0 +1,42 @@
+
+#add-product_image {
+    background-color: rgba(0, 0, 0, 0.246);
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+.fa-plus {
+ 
+   padding: 15px;
+   border-radius: 50%;
+   border: 2px solid $primary;
+   margin-bottom: 30px;
+}
+
+
+#add-product {
+    background-color: rgba(128, 128, 128, 0.493);
+    border-radius: 0.25rem;
+}
+#add-product:hover {
+    background-color: rgba(128, 128, 128, 0);
+    cursor: pointer;
+
+    .fa-plus {
+        transform: scale(1.4);
+        color: $primary;
+    }
+}
+.fa-edit {
+    position: relative;
+    z-index: 10;
+    color: $primary;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    background-color:white;
+    padding: 15px;
+    border-radius: 50%;
+}
+.card_image:hover {
+    .fa-edit {
+        transform: scale(1.2);
+    }
+}

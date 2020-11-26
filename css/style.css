@@ -11025,6 +11025,44 @@ form label {
   font-size: 2.6rem !important;
 }
 
+#edit-header-container {
+  background-image: url(../../images/florencia-viadana-rMPr-UhfaXI-unsplash.jpg);
+  max-width: 1200px;
+  height: 80vh;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+#change {
+  background-color: none !important;
+  border: 2px solid #EB505D;
+  color: #EB505D;
+  width: 150px;
+  height: 40px;
+  font-family: "Unica One", cursive;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin-right: 40px;
+}
+
 .basket {
   background-color: white;
 }
@@ -11107,6 +11145,50 @@ p.remove:hover {
 .basket_checkout button {
   width: 100%;
   margin-top: 40px;
+}
+
+#add-product_image {
+  background-color: rgba(0, 0, 0, 0.246);
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.fa-plus {
+  padding: 15px;
+  border-radius: 50%;
+  border: 2px solid #3B5070;
+  margin-bottom: 30px;
+}
+
+#add-product {
+  background-color: rgba(128, 128, 128, 0.493);
+  border-radius: 0.25rem;
+}
+
+#add-product:hover {
+  background-color: rgba(128, 128, 128, 0);
+  cursor: pointer;
+}
+
+#add-product:hover .fa-plus {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  color: #3B5070;
+}
+
+.fa-edit {
+  position: relative;
+  z-index: 10;
+  color: #3B5070;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.card_image:hover .fa-edit {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 p {
@@ -11470,5 +11552,13 @@ i {
 
 .product_navigation-content {
   height: 50vh;
+}
+
+.error {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  background-color: rgba(224, 33, 33, 0.219);
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */

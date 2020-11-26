@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
+        integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&family=Vollkorn:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Bicycle co. | dashboard</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white row">
+            <a class="navbar-brand col-3" href="./dashboard.html">Bicycle co.</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse row col-12 offset-1 col-lg-6 offset-lg-0" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto col justify-content-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./dashboard.html">dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./add-product.html">add product</a>
+                    </li>
+                    <i class="fas fa-sign-out-alt d-lg-none"></i>
+                </ul>     
+            </div>
+            <div id="top-icons-main" class="col-1 offset-3 d-none d-lg-block order-md-10">
+                <i class="fas fa-sign-out-alt"></i>
+            </div>
+           
+           
+        </nav>
+    </div>
+    <section>
+        <div class="product row justify-content-center">
+            <div class="product_navigation col-11 col-lg-3 row">
+                <div class="product_navigation-content sticky-top">
+                    <h1 class="col-12">Dashboard</h1>
+                    <input class="col-12" type="text" placeholder="Search product name"></input>
+                    <div class="row col-12">
+                        <a href="./add-product.html">
+                            <div class="card col-12" style="width: 18rem;">
+                                <div id="add-product" class="shadow">
+                                    <div class="card_image">
+                                        
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <h3 class="col-8 offset-2 card-title text-center">Add product</h3>
+                                        </div>
+                                    </div> 
+                                </div>  
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-11 col-lg-8 products_wrapper shadow row">
+                <h3 class="col-11 offset-1">Change or delete products</h3>
+                <div id="dashboard-card-container" class="row col-12">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="js/dashboard.js" type="module"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

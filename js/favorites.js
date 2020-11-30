@@ -28,7 +28,7 @@ export function makeFavoriteHtml() {
                     <div class="shadow">
                         <a href="product-page.html?id=${product.id}">
                         <div class="card_image">
-                            <img src="${baseUrl + product.image}" class="card-img-top" alt="${product.title}">
+                            <img src="${product.image}" class="card-img-top" alt="${product.title}">
                             <button type="submit" id="form-button" class="btn btn-secondary">See more</button>
                         </div>
                         </a>

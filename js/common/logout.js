@@ -11,10 +11,6 @@ export function logout() {
             localStorage.removeItem("name");
             location.href = "/admin.html"
         }
-
     })
-
-
-   
     
 }

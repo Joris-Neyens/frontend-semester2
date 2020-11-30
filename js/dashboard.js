@@ -1,28 +1,9 @@
 import {getDashboardApi} from "./utils/dashboard/getDashboardApi.js";
-import {baseUrl} from "./common/baseUrl.js";
-import {getExistingStorage} from './common/localStorage.js';
 import {logout} from "./common/logout.js";
+import {checkLogin} from "./common/checkLogin.js";
 
+checkLogin();
 logout();
-
-
-
-
-function checkLogin() {
-
-    let token = getExistingStorage("token")
-
-    console.log(token)
-
-    // if(token === []){
-    //     location.href = "/admin.html"
-    // };
-
-}
-
-
-
-checkLogin()
 
 getDashboardApi()
 
@@ -58,9 +39,6 @@ export function makeDashboardHtml(products) {
     
 
     cardContainer.innerHTML = dashboardHtml;
-
-    // editLink()
-
 
 }
 

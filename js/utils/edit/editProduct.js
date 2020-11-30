@@ -18,7 +18,10 @@ export async function editProduct(id, productObject) {
     try {
         const response = await fetch(url, editData);
         const json = await response.json();
-        console.log(json);
+        
+        if(json.updated_at) {
+            location.href= "/dashboard.html"
+        }
     } catch(error) {
         console.log("error", error)
     }

@@ -31,44 +31,49 @@
                         <a class="nav-link" href="./add-product.html">add product</a>
                     </li>
                     <i class="fas fa-sign-out-alt d-lg-none"></i>
-                </ul>     
+                </ul>
             </div>
-            <div id="top-icons-main" class="col-1 offset-3 d-none d-lg-block order-md-10">
-                <i class="fas fa-sign-out-alt"></i>
-            </div>    
+            
+            <div id="top-icons-main" class="col-3 offset-0 d-none d-lg-block order-md-10">
+                <div class="row text-right">
+                    <div class="col-8 welcome-message text-right"></div>
+                    <div class="col-2">
+                        <i class="col-12 fas fa-sign-out-alt"></i>
+                    </div>
+                </div>
+            </div>
         </nav>
     </div>
-    <section>
+    <section id="admin-section">
         <div class="product row justify-content-center">
-            <div class="product_navigation col-11 col-lg-3 row">
-                <div class="product_navigation-content sticky-top">
-                    <h1 class="col-12">Dashboard</h1>
-                    <input class="col-12" type="text" placeholder="Search product name"></input>
-                    <div class="row col-12">
+            <div class="dashboard-nav col-11 col-lg-3 row">
+                <div class="dashboard-nav_content sticky-top">
+                    <h2 class="col-12">Dashboard</h2>
+                    <input class="col-10 offset-1" type="text" placeholder="Search product name"></input>
+                    <div class="row col-10 offset-1">
                         <a href="./add-product.html">
                             <div class="card col-12" style="width: 18rem;">
                                 <div id="add-product" class="shadow">
                                     <div class="card_image">
-                                        
                                         <i class="fas fa-plus"></i>
                                     </div>
-                                    </a>
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <h3 class="col-8 offset-2 card-title text-center">Add product</h3>
-                                        </div>
-                                    </div> 
-                                </div>  
                             </div>
                         </a>
+                        <div class="card-body">
+                            <div class="row">
+                                <h3 class="col-8 offset-2 card-title text-center">Add product</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-11 col-lg-8 products_wrapper shadow row">
-                <h3 class="col-11 offset-1">Edit or delete products</h3>
-                <div id="dashboard-card-container" class="row col-12">
-                </div>
+        </div>
+        
+        <div class="col-11 col-lg-8 products_wrapper shadow row">
+            <h1 id="dashboard-h1" class="col-12">Edit or delete products</h1>
+            <div id="dashboard-card-container" class="row col-12">
             </div>
+        </div>
         </div>
 
     </section>

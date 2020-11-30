@@ -23,13 +23,19 @@ i {
     display: flex;
     flex-direction: row;
 
-    .row {
-        width: 30%;
-    }
     i {
-        padding-left: 40px;
+        padding-left: 10px;
     }
 
+}
+.welcome-message {
+    padding: 0;
+    p{
+        margin: 0;
+        font-size: 1rem;
+        text-transform: capitalize;
+       
+    }
 }
 .basket-number {
     font-size: 0.9rem;

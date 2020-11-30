@@ -22,7 +22,7 @@ export function makeProductsHtml(products) {
                             <div class="shadow">
                                 <a href="product-page.html?id=${product.id}">
                                 <div class="card_image">
-                                    <img src="${product.image_url}" class="card-img-top" alt="${product.image.caption}">
+                                    <img src="${product.image_url}" class="card-img-top" alt="${product.description}">
                                     <button type="submit" id="form-button" class="btn btn-secondary">See more</button>
                                 </div>
                                 </a>
@@ -30,7 +30,7 @@ export function makeProductsHtml(products) {
                                     <div class="row">
                                         <h3 class="col-8 offset-2 card-title text-center">${product.title}</h3>
                                         <i class="col-2 far fa-heart card-heart" data-id="${product.id}" data-title="${product.title}"
-                                        data-price="${product.price}" data-image="${product.image.url}" ></i>
+                                        data-price="${product.price}" data-image="${product.image_url}" ></i>
                                     </div>
                                     <p class="card-text text-center">Starting at: <span class="price">$${product.price}</span></p>
                                 </div> 

@@ -11147,6 +11147,12 @@ p.remove:hover {
   margin-top: 40px;
 }
 
+#dashboard-h1 {
+  color: #3B5070 !important;
+  font-size: 2.6rem !important;
+  padding-left: 1.5rem;
+}
+
 #add-product_image {
   background-color: rgba(0, 0, 0, 0.246);
   border: 1px solid rgba(0, 0, 0, 0);
@@ -11191,6 +11197,16 @@ p.remove:hover {
           transform: scale(1.2);
 }
 
+.dashboard-nav {
+  background-color: #3B5070;
+  margin-right: 40px;
+}
+
+.dashboard-nav h2 {
+  color: white;
+  font-size: 2rem;
+}
+
 p {
   max-width: 600px;
 }
@@ -11211,6 +11227,10 @@ header {
 
 section {
   padding: 20px 0px;
+}
+
+#admin-section {
+  margin-top: 40px;
 }
 
 footer {
@@ -11474,12 +11494,18 @@ i {
           flex-direction: row;
 }
 
-#top-icons-main .row {
-  width: 30%;
+#top-icons-main i {
+  padding-left: 10px;
 }
 
-#top-icons-main i {
-  padding-left: 40px;
+.welcome-message {
+  padding: 0;
+}
+
+.welcome-message p {
+  margin: 0;
+  font-size: 1rem;
+  text-transform: capitalize;
 }
 
 .basket-number {

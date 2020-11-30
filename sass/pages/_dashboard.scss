@@ -1,4 +1,8 @@
-
+#dashboard-h1 {
+    color: $primary !important;
+    font-size: 2.6rem !important;
+    padding-left: 1.5rem;
+}
 #add-product_image {
     background-color: rgba(0, 0, 0, 0.246);
     border: 1px solid rgba(0, 0, 0, 0);
@@ -39,4 +43,13 @@
     .fa-edit {
         transform: scale(1.2);
     }
+}
+.dashboard-nav {
+    background-color: $primary;
+    margin-right: 40px;
+    h2 {
+        color: white;
+        font-size: 2rem;
+    }
+    
 }

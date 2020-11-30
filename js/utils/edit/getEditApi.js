@@ -1,5 +1,6 @@
 import {baseUrl} from "../../common/baseUrl.js";
-import {makeEditHtml} from "../../edit.js";
+import {makeEditHtml} from "./makeEditHtml.js";
+
 
 export function getEditApi() {
     const url = baseUrl + "/products";

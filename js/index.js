@@ -43,7 +43,7 @@ export function makeHtml(featured) {
             
             homeCardHtml += `<div class="card shadow-sm col-12 col-sm-5 offset-sm-0 col-md-5 col-lg-3" style="width: 18rem;">
                     <div class="card_image">
-                        <img src="${baseUrl + product.image.url}" class="card-img-top" alt="${product.image.caption}">
+                        <img src="${product.image_url}" class="card-img-top" alt="${product.description}">
                     </div>
                     <div class="card-body">
                         <h3 class="card-title text-center">${product.title}</h3>

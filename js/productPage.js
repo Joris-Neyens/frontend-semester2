@@ -36,11 +36,10 @@ export function productHtml(products) {
 
 
     products.forEach(function(product) {
-        
+
         if(product.id === paramId) {
-            console.log(product)
         
-            imageHtml += `<div class="detail_image-container"><img src="${baseUrl + product.image.url}"></div>`
+            imageHtml += `<div class="detail_image-container"><img src="${product.image_url}"></div>`
 
 
             infoHtml += `<div class="details_info-top">
@@ -51,14 +50,17 @@ export function productHtml(products) {
                             <p>Here should come a short product description.
                             A little summary not more than three or four lines.</p>
                             <button id="basket-button" type="submit" id="form-button" class="btn btn-secondary" data-id="${product.id}"  data-title="${product.title}"
-                            data-price="${product.price}" data-image="${product.image.url}">Add to card<i class="fas fa-shopping-basket"></i></button>
+                            data-price="${product.price}" data-image="${product.image_url}">Add to card<i class="fas fa-shopping-basket"></i></button>
                         </div>`
             productInfoHtml += `<p>${product.description}</p>`
 
             breadcrumbHtml += `${product.title}`
 
             document.title = product.title
+
+            console.log("hello")
         }
+   
 
     })
 
@@ -67,7 +69,7 @@ export function productHtml(products) {
     productInfoText.innerHTML = productInfoHtml
     breadcrumbActive.innerHTML = breadcrumbHtml
 
-    
+ 
     addToWishlist()
 
 }

@@ -2,7 +2,6 @@ import { getExistingStorage, storeItem } from "../../common/localStorage.js";
 import {checkBasket} from "../../common/checkBasket.js";
 
 
-
 export function addToWishlist() {
     
     const basketButton = document.querySelector("#basket-button");
@@ -10,6 +9,7 @@ export function addToWishlist() {
     basketButton.addEventListener("click", addProduct)
 
     function addProduct() {
+
 
         const id = this.dataset.id;
         const title = this.dataset.title;

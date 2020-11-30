@@ -25,7 +25,8 @@ export function shoppingBasketHtml() {
 
         imageHtml += `<div class="row">
                         <div class="col-3 basket-image">
-                            <a href="product-page.html?id=${product.id}"><img src="${baseUrl + product.image}"></a>
+                            <a href="product-page.html?id=${product.id}">
+                            <img src="${product.image}"></a>
                         </div>
                         <div class="col-8 image-info">
                             <h2>${product.title}</h2>

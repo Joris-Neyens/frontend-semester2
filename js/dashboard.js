@@ -1,5 +1,28 @@
 import {getDashboardApi} from "./utils/dashboard/getDashboardApi.js";
 import {baseUrl} from "./common/baseUrl.js";
+import {getExistingStorage} from './common/localStorage.js';
+import {logout} from "./common/logout.js";
+
+logout();
+
+
+
+
+function checkLogin() {
+
+    let token = getExistingStorage("token")
+
+    console.log(token)
+
+    // if(token === []){
+    //     location.href = "/admin.html"
+    // };
+
+}
+
+
+
+checkLogin()
 
 getDashboardApi()
 
@@ -16,7 +39,7 @@ export function makeDashboardHtml(products) {
                                 <div class="shadow">
                                 <a class="edit-link" href="edit.html?id=${product.id}">
                                         <div class="card_image">
-                                            <img src="${baseUrl + product.image.url}" class="card-img-top" alt="${product.image.caption}">
+                                            <img src="${product.image_url}" class="card-img-top" alt="${product.description}">
                                             <i class="far fa-edit"></i>     
                                         </div>
                                         </a>
@@ -36,10 +59,11 @@ export function makeDashboardHtml(products) {
 
     cardContainer.innerHTML = dashboardHtml;
 
-    editLink()
+    // editLink()
 
 
 }
+
 
 
 

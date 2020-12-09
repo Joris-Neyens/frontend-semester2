@@ -11025,44 +11025,6 @@ form label {
   font-size: 2.6rem !important;
 }
 
-#edit-header-container {
-  background-image: url(../../images/florencia-viadana-rMPr-UhfaXI-unsplash.jpg);
-  max-width: 1200px;
-  height: 80vh;
-  margin: 0 auto;
-  background-size: cover;
-  background-position: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-}
-
-#edit {
-  background-color: none !important;
-  border: 2px solid #EB505D;
-  color: #EB505D;
-  width: 150px;
-  height: 40px;
-  font-family: "Unica One", cursive;
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0;
-  margin-right: 40px;
-}
-
 .basket {
   background-color: white;
 }
@@ -11197,14 +11159,35 @@ p.remove:hover {
           transform: scale(1.2);
 }
 
-.dashboard-nav {
+.dashboard-navigation {
   background-color: #3B5070;
   margin-right: 40px;
+  padding: 0 40px;
 }
 
-.dashboard-nav h2 {
+.dashboard-navigation h2 {
   color: white;
   font-size: 2rem;
+}
+
+.dashboard-navigation input {
+  padding: 5px 15px;
+  margin: 0 15px 20px 0px;
+  border: none;
+  font-family: "Vollkorn", serif;
+  font-size: 1.2rem;
+  color: #3B5070;
+}
+
+.dashboard-navigation p {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+
+.dashboard-navigation p:hover {
+  cursor: pointer;
+  color: gray;
 }
 
 p {
@@ -11259,11 +11242,11 @@ header {
 }
 
 #home-header-container {
-  height: 500px;
+  height: 450px;
 }
 
 #home-header-container .opacity {
-  height: 500px;
+  height: 450px;
 }
 
 .header-container_image {
@@ -11421,12 +11404,47 @@ i:hover h3 {
 }
 
 .btn-secondary:hover {
+  background-color: #3B5070 !important;
+}
+
+.btn-secondary:hover {
   color: white;
   background-color: black;
 }
 
 #button-top {
   margin: 0 0 25px 0;
+}
+
+#edit {
+  background-color: #3B5070 !important;
+  color: white;
+  width: 250px !important;
+}
+
+#edit:hover {
+  background-color: #EB505D !important;
+}
+
+#remove {
+  background-color: none !important;
+  border: 2px solid #EB505D;
+  color: #EB505D;
+  width: 200px;
+  height: 40px;
+  font-family: "Unica One", cursive;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin-left: 40px;
+}
+
+#remove:hover {
+  background-color: #EB505D;
+  color: white;
 }
 
 footer {
@@ -11519,6 +11537,10 @@ i {
   text-align: center;
 }
 
+.interactive-link:hover {
+  text-decoration: none !important;
+}
+
 .breadcrumb-nav {
   display: relative;
   z-index: 10;
@@ -11586,5 +11608,9 @@ i {
   padding: 5px;
   background-color: rgba(224, 33, 33, 0.219);
   color: black;
+}
+
+.spinner {
+  color: #3B5070;
 }
 /*# sourceMappingURL=style.css.map */

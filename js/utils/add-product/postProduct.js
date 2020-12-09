@@ -20,7 +20,8 @@ export async function postProduct(newObject) {
         const response = await fetch(url, newProduct);
         const json = await response.json();
 
-        console.log(json);
+        location.href="/dashboard.html"
+
     } catch(error){
         console.log("error", error);   
     }

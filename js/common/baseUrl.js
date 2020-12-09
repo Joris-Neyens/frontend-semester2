@@ -1,1 +1,1 @@
-export const baseUrl = "http://localhost:1337";
+export const baseUrl = "https://semester2-bicycle-app.herokuapp.com";

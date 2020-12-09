@@ -19,7 +19,7 @@ export function checkBasket() {
 
         basket.style.display = "inline-block"
         const basketAmound = getExistingProducts.length;
-        basket.innerHTML = `${basketAmound}`
+        basket.innerHTML = `<p>${basketAmound}</p>`
 
     });   
 

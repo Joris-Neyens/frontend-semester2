@@ -1,5 +1,6 @@
 import {productId} from "../../edit.js";
 
+
 export function makeEditHtml(products) {
 
     const image = document.querySelector(".edit-image");

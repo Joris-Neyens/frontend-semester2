@@ -12,6 +12,9 @@ checkHeart();
 //make html
 export function makeProductsHtml(products) {
 
+    const spinner = document.querySelector(".spinner")
+    spinner.style.display="none";
+
     const cardContainer = document.querySelector("#card-container");
     
     let productsHtml = "";

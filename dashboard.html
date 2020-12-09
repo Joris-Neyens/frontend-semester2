@@ -17,7 +17,7 @@
 <body>
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-white row">
-            <a class="navbar-brand col-3" href="./dashboard.html">Bicycle co.</a>
+            <a class="navbar-brand col-3" href="./index.html">Bicycle co.</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -46,34 +46,25 @@
     </div>
     <section id="admin-section">
         <div class="product row justify-content-center">
-            <div class="dashboard-nav col-11 col-lg-3 row">
+            <div class="dashboard-navigation col-11 col-lg-3 row">
                 <div class="dashboard-nav_content sticky-top">
                     <h2 class="col-12">Dashboard</h2>
                     <input class="col-10 offset-1" type="text" placeholder="Search product name"></input>
-                    <div class="row col-10 offset-1">
-                        <a href="./add-product.html">
-                            <div class="card col-12" style="width: 18rem;">
-                                <div id="add-product" class="shadow">
-                                    <div class="card_image">
-                                        <i class="fas fa-plus"></i>
-                                    </div>
-                            </div>
-                        </a>
-                        <div class="card-body">
-                            <div class="row">
-                                <h3 class="col-8 offset-2 card-title text-center">Add product</h3>
-                            </div>
-                        </div>
-                    </div>
+                    <p id="mountain-bike" class="col-12 col-md-3 col-lg-12 text-md-center text-lg-left ">Mountain bike</p>
+                    <p id="road-bike" class="col-12 col-md-3 col-lg-12 text-md-center text-lg-left">Road bike</p>
+                    <p id="touring-bike" class="col-12 col-md-3 col-lg-12 text-md-center text-lg-left">Touring bike</p>
                 </div>
             </div>
-        </div>
-        
-        <div class="col-11 col-lg-8 products_wrapper shadow row">
-            <h1 id="dashboard-h1" class="col-12">Edit or delete products</h1>
-            <div id="dashboard-card-container" class="row col-12">
+            <div class="col-11 col-lg-8 products_wrapper shadow row">
+                <h1 id="dashboard-h1" class="col-12">Edit or delete products</h1>
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="spinner spinner-border" role="status">
+                    <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+                <div id="dashboard-card-container" class="row col-12">
+                </div>
             </div>
-        </div>
         </div>
 
     </section>

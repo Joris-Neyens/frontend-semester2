@@ -9,8 +9,10 @@ getDashboardApi()
 
 export function makeDashboardHtml(products) {
 
-    const cardContainer = document.querySelector("#dashboard-card-container");
+    const spinner = document.querySelector(".spinner")
+    spinner.style.display="none";
 
+    const cardContainer = document.querySelector("#dashboard-card-container");
     
     let dashboardHtml = "";
 

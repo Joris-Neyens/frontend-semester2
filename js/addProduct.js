@@ -1,5 +1,8 @@
 import {message} from "./common/message.js";
 import {postProduct} from "./utils/add-product/postProduct.js";
+import {checkLogin} from "./common/checkLogin.js";
+
+checkLogin();
 
 const addButton = document.querySelector("#edit");
 addButton.addEventListener("click", formValidation);

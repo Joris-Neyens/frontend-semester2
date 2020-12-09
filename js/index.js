@@ -14,14 +14,12 @@ export function headerImageHtml(homeApi) {
 
     const headerContainer = document.querySelector("#home-header-container");
 
-    const alt = homeApi.hero_banner.caption
+    const alt = homeApi.hero_banner_alt_text;
     
-    const image = homeApi.hero_banner.url
-    const imageUrl = baseUrl + image;
     let newHtml = "";
 
     newHtml += `<div class="opacity"></div>
-                <div id="home-container_image" class="header-container_image" style="background-image: url(${imageUrl})">
+                <div id="home-container_image" class="header-container_image" style="background-image: url(${baseUrl + homeApi.hero_banner.url})" alt="${alt}">
                 <h1>bicycle.co</h1></div>`
 
     headerContainer.innerHTML = newHtml;
@@ -32,6 +30,8 @@ export function headerImageHtml(homeApi) {
 
 export function makeHtml(featured) {
 
+    const spinner = document.querySelector(".spinner")
+    spinner.style.display="none";
 
     const homeCardContainer = document.querySelector("#home-card-container");
 

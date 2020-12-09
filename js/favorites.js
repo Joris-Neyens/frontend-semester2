@@ -19,7 +19,7 @@ export function makeFavoriteHtml() {
     let html = "";
 
     if (storedFavorites.length === 0) {
-        html += `<p>You have no selected favorites</p>`;
+        html += `<div class="col-12"><p class="col-12 text-center">You have no selected favorites</p></div>`;
     }
 
     storedFavorites.forEach(function(product) {

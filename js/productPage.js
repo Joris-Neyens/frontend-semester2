@@ -1,5 +1,4 @@
 import {getProductsApi} from "./utils/product-page/getProductsApi.js";
-import {baseUrl} from "./common/baseUrl.js";
 import {addToWishlist} from "./utils/product-page/addToWishlist.js";
 import {checkBasket} from "./common/checkBasket.js"
 import {checkHeart} from "./common/checkHeart.js"
@@ -19,7 +18,7 @@ if(params.has("id")) {
     document.href = "products.html";
 }
 
-let paramId = JSON.parse(id);
+
 
 
 export function productHtml(products) {
@@ -37,7 +36,7 @@ export function productHtml(products) {
 
     products.forEach(function(product) {
 
-        if(product.id === paramId) {
+        if(product.id === id) {
         
             imageHtml += `<div class="detail_image-container"><img src="${product.image_url}"></div>`
 
@@ -58,7 +57,6 @@ export function productHtml(products) {
 
             document.title = product.title
 
-            console.log("hello")
         }
    
 

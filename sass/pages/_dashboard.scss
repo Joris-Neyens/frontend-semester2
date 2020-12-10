@@ -3,32 +3,6 @@
     font-size: 2.6rem !important;
     padding-left: 1.5rem;
 }
-#add-product_image {
-    background-color: rgba(0, 0, 0, 0.246);
-    border: 1px solid rgba(0, 0, 0, 0);
-}
-.fa-plus {
- 
-   padding: 15px;
-   border-radius: 50%;
-   border: 2px solid $primary;
-   margin-bottom: 30px;
-}
-
-
-#add-product {
-    background-color: rgba(128, 128, 128, 0.493);
-    border-radius: 0.25rem;
-}
-#add-product:hover {
-    background-color: rgba(128, 128, 128, 0);
-    cursor: pointer;
-
-    .fa-plus {
-        transform: scale(1.4);
-        color: $primary;
-    }
-}
 .fa-edit {
     position: relative;
     z-index: 10;
@@ -39,19 +13,21 @@
     padding: 15px;
     border-radius: 50%;
 }
-.card_image:hover {
+.edit-link:hover {
     .fa-edit {
         transform: scale(1.2);
+    }
+    h3 {
+        text-decoration: underline;
     }
 }
 .dashboard-navigation {
     background-color: $primary;
-    margin-right: 40px;
-    padding: 0 40px;
 
     h2 {
         color: white;
         font-size: 2rem;
+        padding-left: 0;
     }
     input {
         padding: 5px 15px;

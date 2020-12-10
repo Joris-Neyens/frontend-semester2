@@ -21,19 +21,18 @@ export function makeProductsHtml(products) {
 
     products.forEach(function(product) {
 
-        productsHtml += `<div class="card col-12 col-sm-5 offset-sm-0 col-md-5 col-lg-4 px-4" style="width: 18rem;">
+        productsHtml += `<div class="card col-12 col-sm-6 offset-sm-0 col-md-4 col-lg-4 px-sm-2 px-xl-4" style="width: 18rem;">
                             <div class="shadow">
                                 <a href="product-page.html?id=${product.id}">
                                 <div class="card_image">
                                     <img src="${product.image_url}" class="card-img-top" alt="${product.description}">
-                                    <button type="submit" id="form-button" class="btn btn-secondary">See more</button>
+                                    <i class="col-2 far fa-heart card-heart" data-id="${product.id}" data-title="${product.title}"
+                                        data-price="${product.price}" data-image="${product.image_url}" ></i>
                                 </div>
                                 </a>
                                 <div class="card-body">
                                     <div class="row">
-                                        <h3 class="col-8 offset-2 card-title text-center">${product.title}</h3>
-                                        <i class="col-2 far fa-heart card-heart" data-id="${product.id}" data-title="${product.title}"
-                                        data-price="${product.price}" data-image="${product.image_url}" ></i>
+                                        <h3 class="col-12 card-title text-center">${product.title}</h3>
                                     </div>
                                     <p class="card-text text-center">Starting at: <span class="price">$${product.price}</span></p>
                                 </div> 

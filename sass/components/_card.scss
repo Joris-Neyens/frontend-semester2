@@ -3,6 +3,10 @@
     width: 100%;
     margin: 0 auto;
 }
+#dashboard-card-container {
+    width: 100%;
+    margin: 0 auto;
+}
 #favorites-card-container {
     width: 100%;
     margin: 0 auto;
@@ -15,6 +19,10 @@
 
     :hover {
         text-decoration: none;
+    }
+
+    .shadow {
+        border-radius: 0.25rem;
     }
 }
 
@@ -37,7 +45,7 @@
         height: 100%;
     }
 
-    button {
+    i {
         position: absolute;
         margin: 10px;
         z-index: 10;
@@ -46,12 +54,7 @@
 
 .card-body {
     height: 120px;
-    
-     i {
-         padding-left: 0;
-         text-align: center;
 
-     }
 }
 i:hover {
     color: $accent;

@@ -4,8 +4,9 @@ import {editValidation} from "./utils/edit/editValidation.js";
 import {deleteProduct} from "./utils/edit/deleteProduct.js";
 import {checkLogin} from "./common/checkLogin.js";
 
-checkLogin();
+
 logout();
+checkLogin();
 getEditApi();
 
 const querystring = document.location.search;

@@ -24,7 +24,7 @@ export function makeFavoriteHtml() {
 
     storedFavorites.forEach(function(product) {
 
-        html += `<div class="card col-12 col-sm-5 offset-sm-0 col-md-5 col-lg-4 px-4" style="width: 18rem;">
+        html += `<div class="card col-12 col-sm-6 offset-sm-0 col-md-4 col-lg-4 px-sm-2 px-xl-4" style="width: 18rem;">
                     <div class="shadow">
                         <a href="product-page.html?id=${product.id}">
                         <div class="card_image">

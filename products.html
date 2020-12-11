@@ -15,112 +15,120 @@
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white row">
-            <a class="navbar-brand mx-auto col-3" href="./index.html">Bicycle co.</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse row col-12 offset-1 col-lg-6 offset-lg-0" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto col justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./favorites.html">Favorites</a>
-                    </li>
-                    <div id="top-icons-dropdown" class="d-lg-none col-12 row">
-                        <a class="interactive-link col-2" href="favorites.html"><i class="heart far fa-heart"></i></a>
-                        <a class="interactive-link col-3" href="shopping-basket.html">
+    <div class="main-container">
+        <div class="wrapper">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white row">
+                    <a class="navbar-brand mx-auto col-3" href="./index.html">Bicycle co.</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse row col-12 offset-1 col-lg-6 offset-lg-0"
+                        id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto col justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./favorites.html">Favorites</a>
+                            </li>
+                            <div id="top-icons-dropdown" class="d-lg-none col-12 row">
+                                <a class="interactive-link col-2" href="favorites.html"><i
+                                        class="heart far fa-heart"></i></a>
+                                <a class="interactive-link col-3" href="shopping-basket.html">
+                                    <i class="fas fa-shopping-basket"></i>
+                                    <span style="display: none" class="basket-number"></span>
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+                    <div id="top-icons-main" class="col-3 d-none d-lg-block order-md-10">
+                        <a class="interactive-link" href="favorites.html">
+                            <i class="heart far fa-heart"></i>
+                        </a>
+                        <a class="interactive-link" href="shopping-basket.html">
                             <i class="fas fa-shopping-basket"></i>
                             <span style="display: none" class="basket-number"></span>
                         </a>
                     </div>
-                </ul>
-            </div>
-            <div id="top-icons-main" class="col-3 d-none d-lg-block order-md-10">
-                    <a class="interactive-link" href="favorites.html">
-                        <i class="heart far fa-heart"></i>
-                    </a>
-                    <a class="interactive-link" href="shopping-basket.html">
-                        <i class="fas fa-shopping-basket"></i>
-                        <span style="display: none" class="basket-number"></span>
-                    </a>
-            </div>
-        </nav>
-    </div>
-    <header>
-        <div class="header-container">
-            <div class="opacity"></div>
-            <div id="products-header_image" class="header-container_image">
-                <nav aria-label="breadcrumb" class="breadcrumb-nav">
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Products</li>
-                    </ol>
                 </nav>
             </div>
-            
+            <header>
+                <div class="header-container">
+                    <div class="opacity"></div>
+                    <div id="products-header_image" class="header-container_image">
+                        <nav aria-label="breadcrumb" class="breadcrumb-nav">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Products</li>
+                            </ol>
+                        </nav>
+                    </div>
+
+                </div>
+            </header>
+            <section>
+                <div class="product row mx-auto">
+                    <div class="product_navigation col-sm-12 col-lg-3 mx-0 mx-lg-5 px-lg-2 px-xl-4 row">
+                        <div class="col-12 product_navigation-content lg-sticky-top">
+                            <h2 class="col-12">Select</h2>
+                            <input class="col-md-6 col-lg-12 offset-1" type="text"
+                                placeholder="Search product name"></input>
+                            <div class="row">
+                                <p id="low-heigh" class="col-sm-12 col-md-4 col-lg-12 ">low - heigh</p>
+                                <p id="heigh-low" class="col-sm-12 col-md-4 col-lg-12">height-low</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-7 col-xl-8 mx-0 products_wrapper shadow row">
+                        <h1 id="dashboard-h1" class="col-12">Products</h1>
+                        <div class="col-12 d-flex justify-content-center">
+                            <div class="spinner spinner-border" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                        </div>
+                        <div id="card-container" class="row col-12">
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-    </header>
-    <section>
-        <div class="product row mx-auto">
-            <div class="product_navigation col-sm-12 col-lg-3 mx-0 mx-lg-5 px-lg-2 px-xl-4 row">
-                <div class="col-12 product_navigation-content lg-sticky-top">
-                    <h2 class="col-12">Select</h2>
-                    <input class="col-md-6 col-lg-12 offset-1" type="text" placeholder="Search product name"></input>
-                    <div class="row">
-                        <p id="low-heigh" class="col-sm-12 col-md-4 col-lg-12 ">low - heigh</p>
-                        <p id="heigh-low" class="col-sm-12 col-md-4 col-lg-12">height-low</p>
-                        
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-4 order-2 order-sm-1 mt-4 mt-sm-0">
+                        <h3 class="text-center text-sm-left">Contact</h3>
+                        <p class="text-center text-sm-left">80 Backstreet</p>
+                        <p class="text-center text-sm-left">W3 1AU London</p>
+                        <p class="text-center text-sm-left">United Kingdom</p>
+                    </div>
+                    <div class="col-12 col-sm-4 offset-sm-1 order-2 order-sm-1 mt-4 mt-sm-0">
+                        <h3 class="text-center text-sm-left">Terms & conditions</h3>
+                        <p class="text-center text-sm-left">Payments</p>
+                        <p class="text-center text-sm-left">Return policy</p>
+                        <p class="text-center text-sm-left">Customer service</p>
+                    </div>
+                    <div class="col-12 col-sm-3 order-3 d-flex justify-content-center mt-4 mt-sm-0 row">
+                        <div class="icon col-2 col-sm-12">
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <div class="icon col-2 col-sm-12">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="icon col-2 col-sm-12">
+                            <i class="fab fa-twitter"></i>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-7 col-xl-8 mx-0 products_wrapper shadow row">
-                <h1 id="dashboard-h1" class="col-12">Products</h1>
-                <div class="col-12 d-flex justify-content-center">
-                    <div class="spinner spinner-border" role="status">
-                        <span class="sr-only">Loading...</span>
-                    </div>
-                </div>
-                <div id="card-container" class="row col-12">
-                </div>
-            </div>
-        </div>      
-    </section>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-4 order-2 order-sm-1">
-                    <h3>Contact</h3>
-                    <p>80 Backstreet</p>
-                    <p>W3 1AU London</p>
-                    <p>United Kingdom</p>
-                </div>
-                <div class="col-12 col-sm-3 offset-sm-1 order-1 order-sm-2">
-                    <h3>Terms & conditions</h3>
-                    <p>Payments</p>
-                    <p>Return policy</p>
-                    <p>Customer service</p>
-                </div>
-                <div class="col-12 col-sm-3 order-3 row">
-                    <div class="icon col-2 col-sm-12">
-                        <i class="fab fa-facebook"></i>
-                    </div>
-                    <div class="icon col-2 col-sm-12">
-                        <i class="fab fa-instagram"></i>
-                    </div>
-                    <div class="icon col-2 col-sm-12">
-                        <i class="fab fa-twitter"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
 
 

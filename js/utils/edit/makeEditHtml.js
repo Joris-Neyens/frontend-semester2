@@ -21,7 +21,7 @@ export function makeEditHtml(products) {
     products.forEach(function(product) {
         if(product.id === productId) {
        
-            imageHtml += `<img src="${product.image_url}" class="col-4 offset-4" alt="bicycle image of ${product.title}">`
+            imageHtml += `<img src="${product.image_url}" class="col-6" alt="bicycle image of ${product.title}">`
             imageUrlHtml += `${product.image_url}`
             titleHtml += `${product.title}`
             priceHtml += `${product.price}`
@@ -41,4 +41,8 @@ export function makeEditHtml(products) {
         featured.checked = true;
     } 
 
+
+
+
 }
+

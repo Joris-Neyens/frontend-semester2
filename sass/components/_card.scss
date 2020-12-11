@@ -46,20 +46,36 @@
     }
 
     i {
-        position: absolute;
-        margin: 10px;
         z-index: 10;
+        cursor: pointer;   
     }
+    .fas{
+        color: $accent;
+    }
+}
+
+.card-heart {
+
+    width: 100%;
+    color: white;
 }
 
 .card-body {
     height: 120px;
-
+    padding: 15px !important;
 }
-i:hover {
+.far:hover {
     color: $accent;
 
     h3 {
         margin: 0;
     }
+}
+
+.card-title:hover {
+    text-decoration: underline;
+}
+
+.card-featured {
+    color: $green;
 }

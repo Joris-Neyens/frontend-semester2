@@ -15,8 +15,15 @@ export function makeDashboardHtml(products) {
     const cardContainer = document.querySelector("#dashboard-card-container");
     
     let dashboardHtml = "";
+    let featured = ""
 
     products.forEach(function(product) {
+
+        if(product.featured === true) {
+            featured = `featured`
+        } else {
+            featured = ``
+        }
 
         dashboardHtml += `<div class="card col-12 col-sm-6 offset-sm-0 col-md-4 col-lg-4 px-sm-2 px-xl-4" style="width: 18rem;">
                             <div class="shadow">
@@ -26,10 +33,9 @@ export function makeDashboardHtml(products) {
                                             <i class="far fa-edit"></i>     
                                         </div>
                                         <div class="card-body">
-                                            <div class="row">
-                                                <h3 class="col-8 offset-2 card-title text-center">${product.title}</h3>
-                                            </div>
-                                            <p class="card-text text-center"><span class="price">$${product.price}</span></p>
+                                                <h3 class="col-12 card-title text-center">${product.title}</h3>
+                                                <p class="card-text text-center col-12 m-0"><span class="price">$${product.price}</span></p>
+                                                <p class="card-featured col-12 text-center p-0">${featured}</p>
                                         </div>
                                     </a>
                                 </div> 

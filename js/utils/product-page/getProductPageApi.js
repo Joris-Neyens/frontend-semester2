@@ -2,7 +2,7 @@ import {baseUrl} from "../../common/baseUrl.js"
 import {productHtml} from "../../productPage.js"
 
 
-export function getProductsApi() {
+export function getProductPageApi() {
     const url = baseUrl + "/products";
     
         (async function() {

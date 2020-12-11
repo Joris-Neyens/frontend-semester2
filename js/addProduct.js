@@ -1,7 +1,11 @@
 import {message} from "./common/message.js";
 import {postProduct} from "./utils/add-product/postProduct.js";
 import {checkLogin} from "./common/checkLogin.js";
+import {imagePreview} from "./common/imagePreview.js";
+import {logout} from "./common/logout.js";
 
+logout();
+imagePreview();
 checkLogin();
 
 const addButton = document.querySelector("#edit");
@@ -47,8 +51,5 @@ function formValidation() {
     } else {
         postProduct(newProduct);
     }
-
-    
-
 
 }

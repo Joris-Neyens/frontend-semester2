@@ -1,21 +1,19 @@
 import { checkHeart } from "./common/checkHeart.js";
 import { getExistingStorage } from "./common/localStorage.js";
-import {baseUrl} from "./common/baseUrl.js";
-import {removeAllFavorites, removeFromStorage} from "./utils/favorites/removeFavorites.js"
+import {removeAllFavorites} from "./utils/favorites/removeFavorites.js"
 import {checkBasket} from "./common/checkBasket.js";
 
 
 checkHeart();
 checkBasket();
 
-const storedFavorites = getExistingStorage("favorites");
+
 
 export function makeFavoriteHtml() {
+
+    const storedFavorites = getExistingStorage("favorites");
     const favCardContainer = document.querySelector("#favorites-card-container");
    
-
-
-
     let html = "";
 
     if (storedFavorites.length === 0) {
@@ -33,23 +31,15 @@ export function makeFavoriteHtml() {
                         </div>
                         </a>
                         <div class="card-body">
-                            <div class="row">
-                                <h3 class="col-8 offset-2 card-title text-center">${product.title}</h3>
-                                <i class="col-2 fas fa-heart card-heart" data-id="${product.id}"></i>        
-                            </div>
+                                <h3 class="col-12 card-title text-center">${product.title}</h3>         
                             <p class="card-text text-center">Starting at: <span class="price">$${product.price}</span></p>
                         </div>
                     </div>
-                    
                 </div>`;
                     
     });
 
     favCardContainer.innerHTML = html;
-
-    removeFromStorage("favorites", ".card-body i")
-
-    
 
 }
 

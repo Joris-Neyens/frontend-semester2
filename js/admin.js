@@ -4,9 +4,20 @@ import {message} from "./common/message.js";
 import {storeItem} from "./common/localStorage.js";
 
 
+const form = document.querySelector("form");
 const loginButton = document.querySelector(".login-button");
 
+form.addEventListener("keyup", function(event){
+
+    if(event.key === "Enter") {
+        loginButton.click();
+    }
+})
+
+
+
 loginButton.addEventListener("click", loginValidation) ;
+
 
 
 export async function login(name, password) {

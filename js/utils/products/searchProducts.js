@@ -18,12 +18,10 @@ export function searchProducts(products) {
             }
         })
         makeProductsHtml(filteredProducts)
-
     }
 
     const lowHeigh = document.querySelector("#low-heigh")
     const heighLow = document.querySelector("#heigh-low")
-
 
     lowHeigh.addEventListener("click", function() {
 

@@ -13,111 +13,115 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Bicycle co. | Home</title>
 </head>
+
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white row">
-            <a class="navbar-brand mx-auto col-3" href="./index.html">Bicycle co.</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse row col-12 offset-1 col-lg-6 offset-lg-0" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto col justify-content-center">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./products.html">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./favorites.html">Favorites</a>
-                    </li>
-                    <div id="top-icons-dropdown" class="d-lg-none col-12 row">
-                        <a class="interactive-link" class="col-2" href="favorites.html">
-                            <i class="heart far fa-heart"></i>
-                        </a>
-                        <a class="interactive-link" class="col-3" href="shopping-basket.html">
+    <div class="main-container">
+        <div class="wrapper">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white row">
+                    <a class="navbar-brand mx-auto col-3" href="./index.html">Bicycle co.</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse row col-12 offset-1 col-lg-6 offset-lg-0"
+                        id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto col justify-content-center">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./products.html">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./favorites.html">Favorites</a>
+                            </li>
+                            <div id="top-icons-dropdown" class="d-lg-none col-12 row">
+                                <a class="interactive-link" class="col-2" href="favorites.html">
+                                    <i class="heart far fa-heart"></i>
+                                </a>
+                                <a class="interactive-link" class="col-3" href="shopping-basket.html">
+                                    <i class="fas fa-shopping-basket"></i>
+                                    <span style="display: none" class="basket-number"></span>
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+                    <div id="top-icons-main" class="col-3 d-none d-lg-block order-md-10">
+                        <a class="interactive-link" href="favorites.html"><i class="heart far fa-heart"></i></a>
+                        <a class="interactive-link" href="shopping-basket.html">
                             <i class="fas fa-shopping-basket"></i>
                             <span style="display: none" class="basket-number"></span>
                         </a>
                     </div>
-                </ul>
+                </nav>
             </div>
-            <div id="top-icons-main" class="col-3 d-none d-lg-block order-md-10">
-                    <a class="interactive-link" href="favorites.html"><i class="heart far fa-heart"></i></a>
-                    <a class="interactive-link" href="shopping-basket.html">
-                        <i class="fas fa-shopping-basket"></i>
-                        <span style="display: none" class="basket-number"></span>
-                    </a>
-            </div>
-        </nav>
-    </div>
-    <header>
-        <div id="home-header-container" class="header-container">
-        </div>
-    </header>
-    <section>
-        <div id="button-top" class="row justify-content-center">
-            <a class="btn btn-primary d-lg-none">Shop online</a>
-        </div>
-        <div class="container">
-                <div class="card-wrapper shadow-sm">
-                    <h2 class="text-center">Bestsellers</h2>
-                    <div class="col-12 d-flex justify-content-center">
-                        <div class="spinner spinner-border" role="status">
-                          <span class="sr-only">Loading...</span>
+            <header>
+                <div id="home-header-container" class="header-container">
+                </div>
+            </header>
+            <section>
+                <div id="button-top" class="row justify-content-center">
+                    <a class="btn btn-primary d-lg-none">Shop online</a>
+                </div>
+                <div class="row col-12 p-0 mx-auto">
+                    <div class="card-wrapper shadow-sm col-10 mx-auto">
+                        <h2 class="text-center">Bestsellers</h2>
+                        <div class="col-12 d-flex justify-content-center">
+                            <div class="spinner spinner-border" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
                         </div>
-                      </div>
-                    <div id="home-card-container" class="card-deck justify-content-center">
+                        <div id="home-card-container" class="card-deck justify-content-center col-12 m-0">
+                        </div>
                     </div>
                 </div>
+
                 <div class="row justify-content-center">
                     <a href="products.html" class="btn btn-primary d-none d-lg-block">Shop online</a>
                 </div>
-            
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <h2 class="text-center">Why bicycle co.</h2>
-            <p id="about-text" class="text-center">Our bikes are durable, practical and good looking. Being the new kid
-                on the block trying to emulate the quality of the past we choose to combine the
-                newest materials with the unmatched quality of making stuff by hand.</p>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-4 order-2 order-sm-1">
-                    <h3>Contact</h3>
-                    <p>80 Backstreet</p>
-                    <p>W3 1AU London</p>
-                    <p>United Kingdom</p>
+            </section>
+            <section>
+                <div class="container">
+                    <h2 class="text-center">Why bicycle co.</h2>
+                    <p id="about-text" class="text-center">Our bikes are durable, practical and good looking. Being the
+                        new kid
+                        on the block trying to emulate the quality of the past we choose to combine the
+                        newest materials with the unmatched quality of making stuff by hand.</p>
                 </div>
-                <div class="col-12 col-sm-3 offset-sm-1 order-1 order-sm-2">
-                    <h3>Terms & conditions</h3>
-                    <p>Payments</p>
-                    <p>Return policy</p>
-                    <p>Customer service</p>
-                </div>
-                <div class="col-12 col-sm-3 order-3 row">
-                    <div class="icon col-2 col-sm-12">
-                        <i class="fab fa-facebook"></i>
+            </section>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-4 order-2 order-sm-1 mt-4 mt-sm-0">
+                        <h3 class="text-center text-sm-left">Contact</h3>
+                        <p class="text-center text-sm-left">80 Backstreet</p>
+                        <p class="text-center text-sm-left">W3 1AU London</p>
+                        <p class="text-center text-sm-left">United Kingdom</p>
                     </div>
-                    <div class="icon col-2 col-sm-12">
-                        <i class="fab fa-instagram"></i>
+                    <div class="col-12 col-sm-4 offset-sm-1 order-2 order-sm-1 mt-4 mt-sm-0">
+                        <h3 class="text-center text-sm-left">Terms & conditions</h3>
+                        <p class="text-center text-sm-left">Payments</p>
+                        <p class="text-center text-sm-left">Return policy</p>
+                        <p class="text-center text-sm-left">Customer service</p>
                     </div>
-                    <div class="icon col-2 col-sm-12">
-                        <i class="fab fa-twitter"></i>
+                    <div class="col-12 col-sm-3 order-3 d-flex justify-content-center mt-4 mt-sm-0 row">
+                        <div class="icon col-2 col-sm-12">
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <div class="icon col-2 col-sm-12">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="icon col-2 col-sm-12">
+                            <i class="fab fa-twitter"></i>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
-
-
-
-
+        </footer>
+    </div>
     <script src="js/index.js" type="module"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -128,6 +132,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>

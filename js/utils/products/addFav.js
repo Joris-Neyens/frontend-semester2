@@ -3,6 +3,13 @@ import {getExistingStorage, storeItem} from "../../common/localStorage.js";
 
 export function selectFavorites() {
 
+    let favorites = document.querySelectorAll(".card-heart");
+    favorites.forEach(function(fav) {
+        fav.addEventListener("click", addFavorite)
+    });
+
+    function addFavorite() {
+
     //toggle heart
     this.classList.toggle("far");
     this.classList.toggle("fas");
@@ -43,6 +50,8 @@ export function selectFavorites() {
     } 
 
     checkHeart()
+
+    }
 }
 
 

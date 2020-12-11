@@ -41,15 +41,15 @@ export function makeHtml(featured) {
 
         if(product.featured === true) {
             
-            homeCardHtml += `<div class="card shadow-sm col-12 col-sm-5 offset-sm-0 col-md-5 col-lg-3" style="width: 18rem;">
-                    <div class="card_image">
-                        <img src="${product.image_url}" class="card-img-top" alt="${product.description}">
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title text-center">${product.title}</h3>
-                        <p class="card-text text-center">Starting at: <span class="price">$${product.price}</span></p>
-                    </div>
-                </div>`
+            homeCardHtml += `<div class="card shadow-sm col-12 col-sm-12 mx-sm-2 mx-auto col-lg-3" style="width: 18rem;">
+                                <div class="card_image">
+                                    <img src="${product.image_url}" class="card-img-top" alt="${product.description}">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title text-center">${product.title}</h3>
+                                    <p class="card-text text-center">Starting at: <span class="price">$${product.price}</span></p>
+                                </div>
+                            </div>`
 
 
         }

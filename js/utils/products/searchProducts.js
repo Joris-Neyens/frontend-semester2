@@ -23,6 +23,8 @@ export function searchProducts(products) {
     const lowHeigh = document.querySelector("#low-heigh")
     const heighLow = document.querySelector("#heigh-low")
 
+    
+
     lowHeigh.addEventListener("click", function() {
 
         products.sort((a, b) => (a.price > b.price ? 1 : -1));

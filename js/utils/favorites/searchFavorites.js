@@ -2,11 +2,14 @@ import {makeFavoriteHtml} from "../../favorites.js";
 import {getExistingStorage} from "../../common/localStorage.js";
 
 
-const products = getExistingStorage();
+let storedFavorites = getExistingStorage("favorites");
 
-searchFavorites(products)
+makeFavoriteHtml(storedFavorites)
 
-    export function searchFavorites(products) {
+
+    export function searchFavorites() {
+
+        const products = getExistingStorage("favorites");
 
         //search product title
         const categoriesInput = document.querySelector(".product_navigation-content input");
@@ -14,6 +17,8 @@ searchFavorites(products)
         categoriesInput.onkeyup = function(input) {
 
             const searchInput = input.target.value.toLowerCase().trim();
+
+
 
             const filteredProducts = products.filter(function(product) {
                 const title = product.title.toLowerCase();
@@ -23,27 +28,10 @@ searchFavorites(products)
                     return true;
                 }
             })
+
+            console.log(filteredProducts)
             makeFavoriteHtml(filteredProducts)
 
         }
-
-        const lowHeigh = document.querySelector("#low-heigh")
-        const heighLow = document.querySelector("#heigh-low")
-
-
-        lowHeigh.addEventListener("click", function() {
-
-            products.sort((a, b) => (a.price > b.price ? 1 : -1));
-            makeFavoriteHtml(products)
-
-        })
-
-        heighLow.addEventListener("click", function() {
-
-            products.sort((a, b) => (a.price < b.price ? 1 : -1));
-            makeFavoriteHtml(products)
-
-        })
-        
 
     }

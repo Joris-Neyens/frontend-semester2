@@ -1,26 +1,22 @@
 import { checkHeart } from "./common/checkHeart.js";
-import { getExistingStorage } from "./common/localStorage.js";
 import {removeAllFavorites} from "./utils/favorites/removeFavorites.js"
 import {checkBasket} from "./common/checkBasket.js";
-
+import {searchFavorites} from "./utils/favorites/searchFavorites.js";
 
 checkHeart();
 checkBasket();
 
+export function makeFavoriteHtml(products) {
 
-
-export function makeFavoriteHtml() {
-
-    const storedFavorites = getExistingStorage("favorites");
     const favCardContainer = document.querySelector("#favorites-card-container");
    
     let html = "";
 
-    if (storedFavorites.length === 0) {
+    if (products.length === 0) {
         html += `<div class="col-12"><p class="col-12 text-center">You have no selected favorites</p></div>`;
     }
 
-    storedFavorites.forEach(function(product) {
+    products.forEach(function(product) {
 
         html += `<div class="card col-12 col-sm-6 offset-sm-0 col-md-4 col-lg-4 px-sm-2 px-xl-4" style="width: 18rem;">
                     <div class="shadow">
@@ -43,7 +39,5 @@ export function makeFavoriteHtml() {
 
 }
 
-
-makeFavoriteHtml();
-
 removeAllFavorites()
+searchFavorites()

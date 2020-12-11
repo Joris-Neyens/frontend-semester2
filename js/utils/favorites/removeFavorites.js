@@ -1,5 +1,6 @@
 import {makeFavoriteHtml} from "../../favorites.js";
 import {checkHeart} from "../../common/checkHeart.js";
+import {getExistingStorage} from "../../common/localStorage.js";
 
 
 export function removeAllFavorites() {
@@ -11,8 +12,10 @@ export function removeAllFavorites() {
     function clearFavorites() {
 
         localStorage.removeItem("favorites");
-        makeFavoriteHtml()
 
+        let products = getExistingStorage("favorites")
+
+        makeFavoriteHtml(products)
         checkHeart()
 
     }

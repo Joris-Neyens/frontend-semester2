@@ -38,14 +38,11 @@ export function makeDashboardHtml(products) {
                                                 <p class="card-featured col-12 text-center p-0">${featured}</p>
                                         </div>
                                     </a>
-                                </div> 
-                                        
+                                </div>   
                                 </div>  
                             </div>`
 
     });
-
-    
 
     cardContainer.innerHTML = dashboardHtml;
 

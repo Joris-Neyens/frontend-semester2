@@ -38,7 +38,6 @@ export async function login(name, password) {
         const json = await response.json();
 
         if(json.user) {
-            console.log(json)
             
             storeItem("key", json.jwt);
             storeItem("name", json.user.username);

@@ -10821,6 +10821,10 @@ h3 {
   font-size: 1.4rem;
 }
 
+h5 {
+  color: #3B5070;
+}
+
 p {
   font-family: "Vollkorn", serif;
   color: #3B5070;
@@ -10848,7 +10852,11 @@ p .price {
   background-color: #CBD9D9;
 }
 
-#about-text {
+.about h1 {
+  color: #3B5070 !important;
+}
+
+.about-text {
   margin: 0 auto;
   font-size: 1.2rem;
 }
@@ -11104,7 +11112,7 @@ p.remove:hover {
   margin-top: 40px;
 }
 
-#dashboard-h1 {
+#blue-h1 {
   color: #3B5070 !important;
   font-size: 2.6rem !important;
   padding-left: 1.5rem;
@@ -11173,12 +11181,16 @@ html, body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
+  position: relative;
+  z-index: -100;
 }
 
 .wrapper {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
+  position: relative;
+  z-index: -99;
 }
 
 p {
@@ -11201,10 +11213,6 @@ header {
 
 section {
   padding: 20px 0px;
-}
-
-.admin-section {
-  margin-top: 40px;
 }
 
 footer {
@@ -11242,6 +11250,10 @@ header {
   height: 450px;
 }
 
+#home-header-container .header-logo {
+  z-index: 10;
+}
+
 .header-container_image {
   height: 100%;
   background-size: cover;
@@ -11259,6 +11271,7 @@ header {
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
+  z-index: 1;
 }
 
 #home-container_image {
@@ -11280,8 +11293,10 @@ header {
   z-index: 1;
 }
 
-h1 {
-  z-index: 10;
+#home-header-container .opacity {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.4 !important;
 }
 
 #card-container {
@@ -11426,10 +11441,6 @@ h1 {
   background-color: black;
 }
 
-#button-top {
-  margin: 0 0 25px 0;
-}
-
 #edit {
   background-color: #3B5070 !important;
   color: white;
@@ -11459,6 +11470,22 @@ h1 {
 #remove:hover {
   background-color: #EB505D;
   color: white;
+}
+
+.modal-footer #edit {
+  background-color: #EB505D !important;
+}
+
+.modal-footer #edit:hover {
+  background-color: #3B5070 !important;
+}
+
+.modal-footer #edit a {
+  color: white;
+}
+
+.modal-footer #edit a:hover {
+  text-decoration: none;
 }
 
 footer {
@@ -11510,6 +11537,10 @@ i {
 .navbar {
   background-color: rgba(255, 240, 173, 0) !important;
   text-transform: uppercase;
+}
+
+.navbar li {
+  font-size: 2rem;
 }
 
 .heart.fas {
@@ -11570,8 +11601,19 @@ i {
   text-transform: none;
 }
 
+.navbar-brand {
+  font-size: 2.6rem;
+  text-transform: none;
+  line-height: 1.7rem;
+}
+
+.navbar-brand span {
+  padding-left: 65px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
 .breadcrumb-nav {
-  display: relative;
   z-index: 10;
   font-family: "Unica One", cursive;
   text-transform: uppercase;

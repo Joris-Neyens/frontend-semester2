@@ -20,7 +20,8 @@ export function headerImageHtml(homeApi) {
 
     newHtml += `<div class="opacity"></div>
                 <div id="home-container_image" class="header-container_image" style="background-image: url(${baseUrl + homeApi.hero_banner.url})" alt="${alt}">
-                <h1>bicycle.co</h1></div>`
+                    <div class="header-logo col-6 col-sm-5 col-md-4 col-lg-3 pt-5 pt-sm-0 mt-5 mt-sm-0 "><img src="../images/logo-white.svg" alt="bicycle nation logo"></div>
+                </div>`
 
     headerContainer.innerHTML = newHtml;
 
@@ -42,13 +43,15 @@ export function makeHtml(featured) {
         if(product.featured === true) {
             
             homeCardHtml += `<div class="card shadow-sm col-12 col-sm-12 mx-sm-2 mx-auto col-lg-3" style="width: 18rem;">
+                                <a href="./product-page.html?id=${product.id}">
                                 <div class="card_image">
-                                    <img src="${product.image_url}" class="card-img-top" alt="${product.description}">
+                                    <img src="${product.image_url}" class="card-img-top" alt="image of bicycle ${product.title}">
                                 </div>
                                 <div class="card-body">
                                     <h3 class="card-title text-center">${product.title}</h3>
                                     <p class="card-text text-center">Starting at: <span class="price">$${product.price}</span></p>
                                 </div>
+                                </a>
                             </div>`
 
 

@@ -7,8 +7,10 @@
     background-color: $secondary;
     
 }
-
-#about-text {
+.about h1 {
+    color: $primary !important;
+}
+.about-text {
     margin: 0 auto;
     font-size: 1.2rem;
 }

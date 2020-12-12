@@ -10,13 +10,10 @@ export function addToWishlist() {
 
     function addProduct() {
 
-
         const id = this.dataset.id;
         const title = this.dataset.title;
         const price = this.dataset.price;
         const image = this.dataset.image;
-
-        console.log(id, title, price)
 
         const currentBasket = getExistingStorage("basket");
 

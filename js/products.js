@@ -28,7 +28,7 @@ export function makeProductsHtml(products) {
                                 
                                     <div class="card_image">
                                     <a class="col-12 h-100 w-100 d-flex justify-content-center" href="product-page.html?id=${product.id}">
-                                        <img src="${product.image_url}" class="card-img-top" alt="${product.description}">
+                                        <img src="${product.image_url}" class="card-img-top" alt="bicycle ${product.title}">
                                     </a>
                                         <i class="card-heart far fa-heart col-2 offset-9 position-absolute pb-2" data-id="${product.id}" data-title="${product.title}"
                                             data-price="${product.price}" data-image="${product.image_url}" ></i>

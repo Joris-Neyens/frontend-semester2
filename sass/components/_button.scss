@@ -36,9 +36,6 @@
     background-color: black;
 }
 
-#button-top {
-    margin: 0 0 25px 0;
-}
 #edit {
    background-color: $primary !important;
    color: white;
@@ -63,4 +60,16 @@
 #remove:hover {
     background-color: $accent;
     color: white;
+}
+.modal-footer #edit {
+    background-color: $accent !important;
+}
+.modal-footer #edit:hover {
+    background-color: $primary !important;
+}
+.modal-footer #edit a {
+    color: white;
+}
+.modal-footer #edit a:hover {
+    text-decoration: none;
 }

@@ -9,7 +9,9 @@ export function makeEditHtml(products) {
     const price = document.querySelector("#price");
     const description  = document.querySelector("#description");
     const featured = document.querySelector("#switch");
-    const id = document.querySelector("#id");
+    // const id = document.querySelector("#id");
+
+
 
     let imageHtml = "";
     let imageUrlHtml = "";
@@ -17,10 +19,11 @@ export function makeEditHtml(products) {
     let priceHtml = "";
     let descriptionHtml = "";
     let featuredHtml = "";
-
+    
     products.forEach(function(product) {
+
         if(product.id === productId) {
-       
+
             imageHtml += `<img src="${product.image_url}" class="col-6" alt="bicycle image of ${product.title}">`
             imageUrlHtml += `${product.image_url}`
             titleHtml += `${product.title}`

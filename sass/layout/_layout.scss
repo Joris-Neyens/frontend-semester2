@@ -6,9 +6,13 @@ html, body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    position: relative;
+    z-index: -100;
 }
 .wrapper {
     flex: 1 0 auto;
+    position: relative;
+    z-index: -99;
 }
 
 p {
@@ -27,9 +31,6 @@ header {
 }
 section {
     padding: 20px 0px;
-}
-.admin-section {
-    margin-top: 40px;
 }
 footer {
     padding: 20px 0;

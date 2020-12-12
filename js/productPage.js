@@ -2,6 +2,8 @@ import {getProductPageApi} from "./utils/product-page/getProductPageApi.js";
 import {addToWishlist} from "./utils/product-page/addToWishlist.js";
 import {checkBasket} from "./common/checkBasket.js"
 import {checkHeart} from "./common/checkHeart.js"
+import {modalBody} from "./utils/product-page/modalBody.js";
+
 
 checkBasket()
 checkHeart()
@@ -18,19 +20,15 @@ if(params.has("id")) {
     document.href = "products.html";
 }
 
-
+const productId = parseInt(id);
 
 
 export function productHtml(products) {
 
-    // const detailsImage = document.querySelector(".details_image");
-    // const detailsInfo = document.querySelector(".details_info");
     const details = document.querySelector(".details");
     const productInfoText = document.querySelector(".product-info_text");
     const breadcrumbActive = document.querySelector("#breadcrumb-active")
 
-    // let imageHtml = "";
-    // let infoHtml = "";
     let detailHtml = ""
     let productInfoHtml = "";
     let breadcrumbHtml = "";
@@ -38,7 +36,7 @@ export function productHtml(products) {
 
     products.forEach(function(product) {
 
-        if(product.id === id) {
+        if(product.id === productId) {
         
             detailHtml += `
 
@@ -57,7 +55,9 @@ export function productHtml(products) {
                     <div class="details_info-bottom">
                         <p>Here should come a short product description.
                         A little summary not more than three or four lines.</p>
-                        <button id="basket-button" type="submit" id="form-button" class="btn btn-secondary" data-id="${product.id}"  data-title="${product.title}"
+                        <button id="basket-button" type="button" class="btn btn-secondary" 
+                        data-toggle="modal" data-target="#add-to-card"
+                        data-id="${product.id}"  data-title="${product.title}"
                         data-price="${product.price}" data-image="${product.image_url}">Add to card<i class="fas fa-shopping-basket"></i></button>
                     </div>
                 </div>`
@@ -76,13 +76,12 @@ export function productHtml(products) {
 
     })
     details.innerHTML = detailHtml
-    // detailsImage.innerHTML = imageHtml
-    // detailsInfo.innerHTML = infoHtml
     productInfoText.innerHTML = productInfoHtml
     breadcrumbActive.innerHTML = breadcrumbHtml
 
  
     addToWishlist()
+    modalBody()
 
 }
 

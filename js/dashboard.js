@@ -29,7 +29,7 @@ export function makeDashboardHtml(products) {
                             <div class="shadow">
                                 <a class="edit-link" href="edit.html?id=${product.id}">
                                         <div class="card_image">
-                                            <img src="${product.image_url}" class="card-img-top" alt="${product.description}">
+                                            <img src="${product.image_url}" class="card-img-top" alt="image of bicycle ${product.title}">
                                             <i class="far fa-edit"></i>     
                                         </div>
                                         <div class="card-body">

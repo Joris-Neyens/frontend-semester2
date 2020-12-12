@@ -21,7 +21,9 @@ if (params.has("id")) {
     document.href = "dashboard.html";
 }
 
-export const productId = id;
+console.log(typeof id)
+
+export const productId = parseInt(id);
 
 
 const editButton = document.querySelector("#edit");

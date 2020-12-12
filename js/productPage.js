@@ -43,7 +43,7 @@ export function productHtml(products) {
             <div class="details_image shadow col-12 col-lg-6">
                     <div class="col-12 d-flex p-0 justify-content-center">
                         <div class="detail_image-container">
-                            <img src="${product.image_url}">
+                            <img src="${product.image_url}" alt="image of bicycle${products.title}">
                         </div>
                     </div>
                 </div>
@@ -53,8 +53,6 @@ export function productHtml(products) {
                         <h2>$${product.price}</h2>
                     </div>
                     <div class="details_info-bottom">
-                        <p>Here should come a short product description.
-                        A little summary not more than three or four lines.</p>
                         <button id="basket-button" type="button" class="btn btn-secondary" 
                         data-toggle="modal" data-target="#add-to-card"
                         data-id="${product.id}"  data-title="${product.title}"

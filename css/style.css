@@ -11296,7 +11296,7 @@ header {
 #home-header-container .opacity {
   position: absolute;
   z-index: 1;
-  opacity: 0.4 !important;
+  opacity: 0.3 !important;
 }
 
 #card-container {
